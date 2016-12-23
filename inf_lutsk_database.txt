@@ -1,0 +1,12 @@
+Database name: lutsk_database
+user: root
+password: root
+______________
+wordpress
+login: mkuser
+password: )rzO2NxmF%jsta7%@s
+
+online database
+Користувач: coral_travel_kiev_ua 
+База даних: coral_travel_kiev_ua
+c.M(&X48vJz{

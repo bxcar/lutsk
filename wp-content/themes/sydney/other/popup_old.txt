@@ -1,0 +1,6 @@
+<form class="pup-form" action="/wpress/wp-content/themes/sydney/pupup_sendmessage.php" method="post"><input type="text" name="name" placeholder="Имя" />
+<span>Как к вам обращаться</span>
+<input type="tel" required name="phone" placeholder="+38 (0XX) XXX-XX-XX">
+<span>Ваш номер телефона</span>
+<input type="submit" value="Отправить"></form>
+<p>Відправляючи форму в надаєте згоду на обробку персональних даних згідно Закону України «Про захист персональних даних»</p>
