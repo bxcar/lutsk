@@ -535,11 +535,11 @@ img.site-logo {
 }
 
 .float-header img.site-logo {
-    margin-top: 0;
+    margin-top: -2px;
 }
 
 .float-header .header-number p {
-    margin-top: -2px;
+    margin-top: 2px;
 }
 
 .widget ul {
@@ -5972,7 +5972,7 @@ input[type="color"]:focus {
 .telephone2 {
     padding-top: 10px;
     /*color: #363636;*/
-    color: #fff;
+    color: #000;
     font-size: 55px;
     /*font-family: 'open_sansextrabold', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
@@ -5983,7 +5983,7 @@ input[type="color"]:focus {
 .telephone2 span {
     display: block;
     /*color: #363636;*/
-    color: #fff;
+    color: #252525;
     font-size: 18px;
     /*font-family: 'open_sansbold', sans-serif;*/
     font-family: 'Open Sans', sans-serif;
@@ -6480,6 +6480,7 @@ p {
 .prices img {
     width: auto !important;
     position: absolute;
+    top: 0;
 }
 
 .prices #palmright {
@@ -6953,4 +6954,15 @@ a.back-to-main1 {
 
 .abs-link:focus {
     color: #fff;
+}
+
+.req-list li {
+    display: inline-block;
+    vertical-align: bottom;
+    margin-right: 30px;
+}
+
+.req-list li img {
+    width: 100px !important;
+    position: static;
 }
