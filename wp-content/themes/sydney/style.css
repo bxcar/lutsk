@@ -527,11 +527,11 @@ img {
 }
 
 img.site-logo {
-    width: 170px;
+    width: 195px;
 }
 
 .site-header img.site-logo {
-    margin-top: -10px;
+    margin-top: -20px;
 }
 
 .float-header img.site-logo {
@@ -3826,10 +3826,11 @@ input[type="color"]:focus {
     }
 
     .header-number {
-        width: 14% !important;
+        width: 38% !important;
     }
 
     .header-number p {
+        display: inline-block;
         text-align: left;
         color: #ffffff;
         font-size: 21px;
@@ -3843,6 +3844,11 @@ input[type="color"]:focus {
         margin-right: -40%;
         margin-left: -20%;
         margin-top: -14px;
+    }
+    .header-number p:last-child {
+        background: url('/wp-content/themes/sydney/img/map-marker.png') no-repeat;
+        background-size: 50px;
+        background-position-y: -8px;
     }
 
     /*.header-number p:hover {
@@ -6923,7 +6929,7 @@ a.back-to-main1 {
 }
 .abs-link {
     position: absolute;
-    top: 5%;
+    top: 6%;
     right: 20%;
     color: #ffffff;
     font-size: 14px;

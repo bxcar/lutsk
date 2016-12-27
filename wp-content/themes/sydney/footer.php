@@ -43,7 +43,7 @@
 
                 <a href="#" class="popmake-129 modal-link product-link img-link"
                    data-order="Проверьте нас (Наталия)"
-                   data-img="http://www.makintour.com/uploads/Dunai.jpg">Задайте мне вопрос</a>
+                   data-img="http://www.makintour.com/uploads/Dunai.jpg">Задайте мені питання</a>
             </div>
         </div>
 
@@ -62,7 +62,7 @@
 
                 <a href="#" class="popmake-599 modal-link product-link img-link"
                    data-order="Проверьте нас (Владимир)"
-                   data-img="http://www.makintour.com/uploads/Desyatnik.JPG">Задайте мне вопрос</a>
+                   data-img="http://www.makintour.com/uploads/Desyatnik.JPG">Задайте мені питання</a>
             </div>
         </div>
 
@@ -80,7 +80,7 @@
 
                 <a href="#" class="popmake-597 modal-link product-link img-link"
                    data-order="Проверьте нас (Юлия)"
-                   data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мне вопрос</a>
+                   data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мені питання</a>
             </div>
         </div>
 
@@ -98,7 +98,7 @@
 
                 <a href="#" class="popmake-597 modal-link product-link img-link"
                    data-order="Проверьте нас (Юлия)"
-                   data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мне вопрос</a>
+                   data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мені питання</a>
             </div>
         </div>
     </div>
@@ -209,20 +209,20 @@
 
 <footer itemscope itemtype="http://schema.org/WPFooter" id="colophon" class="site-footer" role="contentinfo">
     <div class="grid foot">
-        <p class="f-text1 box">ООО «МАКИНТУР» <br/>
-            ЕГРПОУ: 36480659 <br/>
-            <a class="popmake-515" href="#">Платежная информация</a><br/>
-            моб. +38 096 711 01 01
+        <p class="f-text1 box">ТОВ «МАКІНТУР» <br/>
+            ЄДРПОУ: 36480659 <br/>
+            <a class="popmake-515" href="#">Платіжна інформація</a><br/>
+            тел. 8 800 200 12 58
         </p>
 
-        <p class="f-text2 box">г.&nbsp;Киев, <br/>
-            просп.&nbsp;Маяковского <span style="white-space:nowrap;">44-А</span>, <br/>«Sport Life» (Троещина)<br>
-            <span class="span-none">e-mail:</span> kiev2@makintour.com</p>
+        <p class="f-text2 box">м.&nbsp;Луцьк, <br/>
+            вул.&nbsp;Кривий Вал <span style="white-space:nowrap;">34</span>, <br/>оф.201<br>
+            <span class="span-none">e-mail:</span> lutsk@makintour.com</p>
 
         <p class="f-text3 box">
-            <a class="popmake-158 modal-link" href="#">Соглашение об обработке персональных данных.</a><br/>
+            <a class="popmake-158 modal-link" href="#">Згода на обробку персональних даних</a><br/>
 
-            <a class="popmake-bank modal-link" href="#">Банковская гарантия</a><br/>
+            <a class="popmake-bank modal-link" href="#">Банківська гарантія</a><br/>
         </p>
     </div>
 </footer><!-- #colophon -->
