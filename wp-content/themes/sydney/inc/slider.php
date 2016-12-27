@@ -50,6 +50,7 @@ function sydney_slider_template() {
                     <div class="overlay-main"></div>
                         <div class="slide-inner">
                             <div class="contain animated fadeInRightBig text-slider text-slider-none">
+                                <a class="abs-link modal-link" href="#works"><span>Як це праціює?</span></a>
                                 <h1 id="multi-title" class="maintitle maintitle-none">Гарячі тури<br> з гарантією <span style="color: #ff5516;">КРАЩОЇ</span> ціни в<br> Луцьку<?php //echo esc_html($slider_title_1); ?></h1>
                                 <p class="subtitle subtitle-none"><?php echo esc_html($slider_subtitle_1); ?></p>
                             </div>
@@ -139,24 +140,25 @@ function sydney_slider_button() {
 
     if ($slider_button) {
         echo '<a style="display: none;" href="' . esc_url($slider_button_url) . '" class="roll-button button-slider">' . esc_html($slider_button) . '</a>
+       
                 <div class="top-form-container">
                     <div class="form-descr box">
-                        <h3>Получите <span class="discount-size">скидку</span> <br/>
+                        <h3>Отримайте <span class="discount-size">знижку</span> <br/>
                             1000&nbsp;грн. на тур*</h3>
 
-                        <p><span>Акция!</span> Дарим сертификат на 1000&nbsp;грн. на покупку тура*
-                            всем
-                            посетителям
-                            сайта. <br/>
-                            Просто заполните форму.</p>
+                        <p><span>Акція!</span> Даруємо сертифікат на 1000&nbsp;грн. на придбання туру*
+                            всім
+                            відвідувачам
+                            сайту. <br/>
+                            Просто заповніть форму.</p>
 
-                        <p><span>Осталось всего 7 сертификатов!</span></p>
+                        <p><span>Залишилось усього 7 сертифікатів!</span></p>
                     </div>
                     <div class="sidebar-column col-md-4">
                         <aside id="text-2" class="widget widget_text"><h3 class="widget-title"
-                                                                          style="text-align: center; width: 93%;">
-                                Заполните форму сейчас</h3>
-                            <p class="under-header-in-form">и получите 5 вариантов отдыха с подробным расчётом цен</p>
+                                                                          style="text-align: left; width: 93%;">
+                                Заповніть форму зараз</h3>
+                            <p class="under-header-in-form">та отримайте 5 варіантів відпочинку з докладним розрахунком цін</p>
                             <div class="textwidget">
 <!--                                <div role="form" class="wpcf7" id="wpcf7-f47-o1" lang="ru-RU" dir="ltr">-->
                                     <div class="screen-reader-response"></div>
@@ -169,7 +171,7 @@ function sydney_slider_button() {
                                             <span class="wpcf7-form-control-wrap your-name"><input required type="text"
                                                                                                    style="width: 100%;"
                                                                                                    name="your-name"
-                                                                                                   placeholder="Ваше имя*"
+                                                                                                   placeholder="Ваше ім\'я*"
                                                                                                    value="" size="40"
                                                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
                                                                                                    aria-required="true"
@@ -178,7 +180,7 @@ function sydney_slider_button() {
                                             <span class="wpcf7-form-control-wrap tel-564"><input required type="tel"
                                                                                                  style="width: 100%;"
                                                                                                  name="tel-564"
-                                                                                                 placeholder="Контактный телефон*"
+                                                                                                 placeholder="Контактний телефон*"
                                                                                                  value=""
                                                                                                  size="40"
                                                                                                  class="wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-tel"
@@ -186,16 +188,15 @@ function sydney_slider_button() {
 
                                             <span class="wpcf7-form-control-wrap your-message"><textarea
                                                     name="your-message"
-                                                    placeholder="Пожелания к туру*"
+                                                    placeholder="Побажання до туру*"
                                                     cols="40" rows="10"
                                                     class="wpcf7-form-control wpcf7-textarea"
                                                     aria-invalid="false"></textarea></span> </label></p>
-                                        <p><input id="submit-but" type="submit" value="Отправить">
+                                        <p><input id="submit-but" type="submit" value="Розрахувати">
                                         </p>
                                         <div class="wpcf7-response-output wpcf7-display-none"></div>
                                     </form>
-                                    <p class="form-text2">Мы перезвоним вам через
-                                        10 минут, засекайте!</p>
+                                    <p class="form-text2">Ми зателефонуємо вам через 10 хвилин, засікайте!</p>
                                 </div>
                             </div>
                         </aside>

@@ -7,62 +7,37 @@
  * @package Sydney
  */
 ?>
-<p class="prices-info">Стоимость указана
-    на одного при двухместном размещении. Все сборы уже включены в стоимость! По некоторым направлениям необходимо
-    открытие визы. Цены реальные, но места заканчиваются</p>
+<p class="prices-info">Ціна вказана на одного при двумісному розміщенні. Всі збори вже включені у вартість! По деяким напрямкам необхідно
+    відкриття візи. Ціни реальні, але місця закінчуються</p>
 <p class="get-offers-button"><a onclick="get_all_button();" class="popmake-form_for_special btn1 modal-link product-link"
-                                data-order="Получить все предложения">Получить все предложения</a></p>
-
-<div class="prev">
-    <h2>ПОЧЕМУ ВЫГОДНО ОТДЫХАТЬ С CORAL TRAVEL</h2>
-    <div class="prev-item" id="prev_item_1">
-        <img src="/wp-content/themes/sydney/img/prev/v1.png" width="61" height="64">
-        <p class="title">БОЛЬШЕ 20 ЛЕТ<br>
-            НА РЫНКЕ</p>
-        <p class="text">Официальный представитель туроператора с многолетним опытом Coral Travel в Борисполе
-            предоставляет качественные услуги на рынке туризма и продолжает развиваться для вас</p>
-    </div>
-
-    <div class="prev-item" id="prev_item_2">
-        <img src="/wp-content/themes/sydney/img/prev/v2.png" width="61" height="64">
-        <p class="title">28 СТРАН –<br>
-            60 НАПРАВЛЕНИЙ</p>
-        <p class="text">Мы предлагаем туры в 28 стран и в более чем 60 различных направлений из Украины</p>
-    </div>
-
-    <div class="prev-item" id="prev_item_3">
-        <img src="/wp-content/themes/sydney/img/prev/v3.png" width="61" height="64">
-        <p class="title">233 АГЕНТСТВА<br>
-            76 ГОРОДОВ УКРАИНЫ</p>
-        <p class="text">Мы улучшаем качество предостовляемых услуг и создаем новые точки обслуживания в различных
-            городах Украины для еще большего вашего комфорта</p>
-    </div>
-
-    <div class="prev-item" id="prev_item_4">
-        <img src="/wp-content/themes/sydney/img/prev/v4.png" width="61" height="64">
-        <p class="title">НАДЕЖНОСТЬ И<br>
-            КАЧЕСТВО</p>
-        <p class="text">Основываясь на главном девизе «Coral Travel» - НАДЕЖНОСТЬ, мы стремимся обеспечивать услуги
-            высокого качества и прислушиваться к вашим пожеланиям</p>
-    </div>
+                                data-order="Получить все предложения">Отримати всі пропозиції</a></p>
 </div>
+</div>
+<section class="prices">
+    <p class="get-offers-button" style="margin-top: 20px; margin-bottom: 10px;"><a style="background-color: #fff; color: #3e3e3e;"onclick="get_all_button();" class="popmake-form_for_special btn1 modal-link product-link"
+                                    data-order="Получить все предложения">Залиште запит</a></p>
+    <span style="color: #252525; font-size: 16px; line-height: 18px;" class="prefooter">та отримайте сертифікат на суму 100грн., який діє на слідуючих туроператорів</span>
+    <img id="palmright" src="/wp-content/themes/sydney/img/palm.png">
+    <img id="palmleft" src="/wp-content/themes/sydney/img/palmleft.png">
+    <div class="grid">
+        <span class="prefooter">Залишилось всього 7 сертифікатів</span>
+    </div>
+</section>
 <section class="team">
     <div class="grid">
-        <p class="team-text">Наши эксперты подберут и рассчитают для вас 5 вариантов отдыха за 10&nbsp;минут.</p>
 
-        <h2>Проверьте нас прямо сейчас!</h2>
+        <h2>Перевірте нас прямо зараз!</h2>
+        <p class="team-text">Наші експерти підберуть і розрахують для вас 5 варіантів відпочинку за 10&nbsp;хвилин.</p>
 
         <div class="team-item box">
             <div class="team-img Dunai"></div>
             <div class="team-info">
-                <h3>Иванченко Елена</h3>
+                <h3>Дунай Наталія</h3>
 
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 096 711-01-01<br><span style="font-size: 12px"></span></p>
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/skype-icon-for-manager.png')">makintour-kiev2<br></p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 068 528-22-27<br><span style="font-size: 12px"></span></p>
+                <p class="team-mail">nd@makintour.com</p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/icon4.png')">8 років в туризмі<br></p>
                 <!--<p class="viber-whatsapp"><span>(Viber, WhatsApp)</span> +38 099 213-95-55</p>-->
-
-                <p class="team-mail">kiev2@makintour.com</p>
-
 
 <!--                <p class="team-year">1 год в туризме</p>-->
 
@@ -76,13 +51,12 @@
             <div class="team-img Desyatnik">
             </div>
             <div class="team-info">
-                <h3>Богуцкая Татьяна</h3>
+                <h3>Десятник Володимир</h3>
 
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 096 711-01-01<br><span style="font-size: 12px"></span></p>
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/skype-icon-for-manager.png');">makintour-kiev2<br></p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 068 528-22-27<br><span style="font-size: 12px"></span></p>
+                <p class="team-mail">tour0303@makintour.com</p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/icon4.png');">7 років в туризмі<br></p>
                 <!--<p class="viber-whatsapp"><span>(Viber, WhatsApp)</span> +38 099 213-95-55</p>-->
-
-                <p class="team-mail">kiev2@makintour.com</p>
 
 <!--                <p class="team-year">2 года в туризме</p>-->
 
@@ -95,15 +69,32 @@
         <div class="team-item box">
             <div class="team-img Chorna"></div>
             <div class="team-info">
-                <h3>Мороз Наталья</h3>
+                <h3>Чорна Юлія</h3>
 
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 096 711-01-01<br><span style="font-size: 12px"><!--(Viber, WhatsApp)--></span></p>
-                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/skype-icon-for-manager.png');">makintour-kiev2<br></p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 068 528-22-27<br><span style="font-size: 12px"><!--(Viber, WhatsApp)--></span></p>
+                <p class="team-mail">tour0301@makintour.com</p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/icon4.png');">6 років в туризмі<br></p>
                 <!--<p class="viber-whatsapp"><span>(Viber, WhatsApp)</span> +38 099 213-95-55</p>-->
 
-                <p class="team-mail">kiev2@makintour.com</p>
-
 <!--                <p class="team-year">1 год в туризме</p>-->
+
+                <a href="#" class="popmake-597 modal-link product-link img-link"
+                   data-order="Проверьте нас (Юлия)"
+                   data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мне вопрос</a>
+            </div>
+        </div>
+
+        <div class="team-item box">
+            <div class="team-img Chorna"></div>
+            <div class="team-info">
+                <h3>Корольчук Наталія</h3>
+
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/telephone-icon-for-manager.png') !important;">+38 068 528-22-27<br><span style="font-size: 12px"><!--(Viber, WhatsApp)--></span></p>
+                <p class="team-mail">bulgaria@makintour.com</p>
+                <p class="team-tel" style="background-image: url('/wp-content/themes/sydney/img/icon4.png');">8 років в туризмі<br></p>
+                <!--<p class="viber-whatsapp"><span>(Viber, WhatsApp)</span> +38 099 213-95-55</p>-->
+
+                <!--                <p class="team-year">1 год в туризме</p>-->
 
                 <a href="#" class="popmake-597 modal-link product-link img-link"
                    data-order="Проверьте нас (Юлия)"
@@ -115,20 +106,8 @@
 
 </div>
 </div>
-<section class="prices">
-    <img id="palmright" src="/wp-content/themes/sydney/img/palm.png">
-    <img id="palmleft" src="/wp-content/themes/sydney/img/palmleft.png">
-    <div class="grid">
-        <p class="telephone2"><span>Есть вопрос по отдыху? С&nbsp;удовольствием поможем:</span>
-            +38 096 711 01 01</p>
-        <h3> Время обработки заявок</h3>
-        <p style="margin-bottom: 0;" class="dates">Пн-Пт: 10.00 - 20.00</p>
-        <p class="dates">Сб-Вс: 10.00 - 17.00<br/><br/>
-            <span class="prefooter">Если вы оставите заявку в другое время, мы обязятельно перезвоним в рабочее время офиса</span>
-        </p>
-    </div>
-</section>
-<h2 class="header-bottom-form">Мы гарантируем <span>ЛУЧШИЕ&nbsp;цены</span> на туры <!--<br/>-->
+
+<!--<h2 class="header-bottom-form">Мы гарантируем <span>ЛУЧШИЕ&nbsp;цены</span> на туры
     на Троещине</h2>
 <div id="content" class="page-wrap" style="padding-top: 30px; padding-bottom: 0;">
     <div class="container content-wrapper">
@@ -154,7 +133,7 @@
                         <div class="textwidget">
                             <div class="screen-reader-response"></div>
                             <form onsubmit="loaderMainFormBottom();" id="contact-form-bottom" action="/thanks/"
-                                  method="post" class="wpcf7-form"> <!--/wp-content/themes/sydney/sendmessage.php-->
+                                  method="post" class="wpcf7-form">
                                 <div style="display: none;">
                                     <input type="hidden" name="order" value="Нижняя форма на главной странице">
                                 </div>
@@ -191,9 +170,9 @@
                                 10 минут, засекайте!</p>
                         </div>
                     </aside>
-                </div>
+                </div>-->
 <!--<h2 class="header-bottom-form social-widgets-header">Присоединяйтесь к нам в социальных сетях!</h2>-->
-            </div>
+<!--            </div>-->
             
             <!--<div class="soc-widget-all">
                 <script type="text/javascript" src="//vk.com/js/api/openapi.js?136"></script>
@@ -217,7 +196,7 @@
                     width="350" height="400" style="border:none;/*overflow:hidden;*/z-index: 100;" scrolling="no" frameborder="0"
                     allowTransparency="true"></iframe>-->
 <!--            </div>-->
-        </div>
+       <!-- </div>
     </div>
 </div>
 </div><!-- #content -->

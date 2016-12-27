@@ -365,7 +365,7 @@ AND pmet.meta_value = p.id";
                                  src="/wp-content/themes/sydney/img/icons/privilege2.png">
                             <a id="order-special-button" onclick="addhotel(this);" rel="fancybox" href="#"
                                class="popmake-form_for_special btnprice modal-link product-link"
-                               data-order="AMC Royal Hotel 5*" country="Египет">Заказать</a>
+                               data-order="AMC Royal Hotel 5*" country="Египет">Більше цін</a>
                         </div>
                     </footer><!-- .entry-footer -->
                 </article><!-- #post-## -->

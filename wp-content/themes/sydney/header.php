@@ -122,7 +122,7 @@ if(!$_SESSION['urli']) {
                         </nav><!-- #site-navigation -->
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
-                        <p <!--style="overflow: hidden;-->">096 711 01 01<br><a href="#"><span class="popmake-522 header-number-text">Закажите&nbsp;обратный&nbsp;звонок</span></a></p>
+                        <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
                     </div>
                 </div>
             </div>
@@ -140,7 +140,7 @@ if(!$_SESSION['urli']) {
         <div class="container content-wrapper">
             <div class="row">
                 
-                <h2 id="goto-from-top-button" class="tour-header">Лучшие Цены на&nbsp;Туры по&nbsp;направлениям</h2>
+                <h2 id="goto-from-top-button" class="tour-header">Найкращі ціни на&nbsp;Тури по&nbsp;напрямкам</h2>
                 <div id="filt" class="filters">
                     <select id="country-select" class="select-spec" style="margin-right: 20px;
                                   margin-left: 25px;">
