@@ -845,7 +845,7 @@ Header
     width: 100%;
     z-index: 1000;
     /*background-color: transparent;*/
-    background: #ff5516;
+    background: #ff0088;
     padding: 20px 0;
     -webkit-transition: all 0.3s ease-out;
     -moz-transition: all 0.3s ease-out;
@@ -959,7 +959,7 @@ Header
 
 .site-header.float-header {
     /*background-color: rgba(0,0,0,0.9);*/
-    background: #ff5516 !important;
+    background: #ff0088 !important;
     padding: 5px;
 }
 
@@ -2260,7 +2260,7 @@ Footer
 Bottom
 --------------------------------------------------------------*/
 .site-footer {
-    background-color: #ff5516 !important;
+    background-color: #ff0088 !important;
     /*line-height: 35px;*/
     font-family: 'Open Sans', sans-serif;
     padding: 5px 105px;
@@ -4216,7 +4216,7 @@ input[type="color"]:focus {
         margin-top: 0% !important;
     }
     .site-header {
-        background: #ff5516 !important;
+        background: #ff0088 !important;
     }
 
     .btn-menu {
@@ -5558,7 +5558,7 @@ input[type="color"]:focus {
 }
 
 .tprice a:hover {
-    color: #FF5516 !important;
+    color: rgb(132,194,37) !important;
     background-color: transparent;
     transition: 0.33s;
 }
@@ -5604,9 +5604,9 @@ input[type="color"]:focus {
     margin: 0 0 0 10px;
     margin-top: 0px;
     margin-bottom: 0px;
-    border: 1px solid #FF5516;
+    border: 1px solid rgb(132,194,37);
     border-radius: 9px;
-    background-color: #FF5516;
+    background-color: rgb(132,194,37);
     transition: 0.33s;
     text-align: center;
 }
@@ -6103,7 +6103,7 @@ input[type="color"]:focus {
 .prices {
     text-align: center;
     padding: 0px 0 40px;
-    background: #ff5516;
+    background: rgb(132,194,37);
     position: relative;
     overflow: hidden;
 }
@@ -6353,10 +6353,16 @@ input[type="color"]:focus {
     /*font-family: 'open_sanssemibold', sans-serif;*/
     display: inline-block;
     vertical-align: top;
-    margin-left: 30%;
-    margin-right: 30%;
+    margin-left: 36%;
+    margin-right: 36%;
     font-size: 28px;
 }
+
+.prefooter2 {
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
 
 .sidebar-column {
     /*height: 560px;*/
@@ -6630,10 +6636,12 @@ p {
 
 #popmake-508 .content-top-line {
     margin-left: -15px;
+    display: none;
 }
 
 #popmake-508 .content-bottom-line {
     margin-left: 5px;
+    display: none;
 }
 
 #pum_popup_title_129,
@@ -6954,6 +6962,12 @@ a.back-to-main1 {
 
 .abs-link:focus {
     color: #fff;
+}
+
+
+.req-list {
+    margin-top: 20px;
+    margin-bottom: 30px;
 }
 
 .req-list li {

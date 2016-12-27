@@ -16,11 +16,6 @@
 </div>
 </div>
 <section class="prices">
-    <p class="get-offers-button" style="margin-top: 20px; margin-bottom: 10px;"><a
-            style="background-color: #fff; color: #3e3e3e;" onclick="get_all_button();"
-            class="popmake-form_for_special btn1 modal-link product-link"
-            data-order="Получить все предложения">Залиште запит</a></p>
-    <span style="color: #252525; font-size: 16px; line-height: 18px;" class="prefooter">та отримайте сертифікат на суму 100грн., який діє на слідуючих туроператорів</span>
     <img id="palmright" src="/wp-content/themes/sydney/img/palm.png">
     <img id="palmleft" src="/wp-content/themes/sydney/img/palmleft.png">
     <ul class="req-list">
@@ -32,8 +27,13 @@
         <li><img style="width: 150px !important;" src="/wp-content/themes/sydney/img/coral_logo.png" alt="coral travel"/></li>
     </ul>
     <div class="grid">
-        <span class="prefooter">Залишилось всього 7 сертифікатів</span>
+        <span class="prefooter prefooter2">Залишилось всього 7 сертифікатів</span>
     </div>
+    <p class="get-offers-button" style="margin-top: 20px; margin-bottom: 10px;"><a
+            style="background-color: #fff; color: #3e3e3e;" onclick="get_all_button();"
+            class="popmake-form_for_special btn1 modal-link product-link"
+            data-order="Получить все предложения">Залиште запит</a></p>
+    <span style="color: #252525; font-size: 16px; line-height: 18px;" class="prefooter">та отримайте сертифікат на суму 100грн., який діє на слідуючих туроператорів</span>
 </section>
 <div id="content" class="page-wrap" style="padding-top: 30px; padding-bottom: 0;">
     <div class="container content-wrapper">
