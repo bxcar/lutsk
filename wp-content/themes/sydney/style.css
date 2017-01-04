@@ -3945,16 +3945,16 @@ input[type="color"]:focus {
         width: 45% !important;
     }
 
-    .form-descr {
-        background: url('/wp-content/themes/sydney/img/arrow-block(add)_coral.png') no-repeat right center !important;
-        /*background-size: cover;*/
+    /*.form-descr {
+        background: url('/wp-content/themes/sydney/img/arrow-block(add)_coral_yellow.png') no-repeat right center !important;
+        !*background-size: cover;*!
         background-size: 100% !important;
         padding-bottom: 180px !important;
-        /*padding: 35px 80px 35px 35px;*/
+        !*padding: 35px 80px 35px 35px;*!
         margin-top: 15px;
         margin-right: 0 !important;
         text-align: left;
-    }
+    }*/
 
     .content-area .hentry {
         width: 31%;
@@ -3993,6 +3993,16 @@ input[type="color"]:focus {
    }
 }
 @media only screen and (max-width: 991px) {
+    .form-descr {
+        background: url('/wp-content/themes/sydney/img/arrow-block(add)_coral_yellow.png') no-repeat right center !important;
+        /*background-size: cover;*/
+    background-size: 100% !important;
+        padding-bottom: 180px !important;
+        /*padding: 35px 80px 35px 35px;*/
+    margin-top: 15px;
+        margin-right: 0 !important;
+        text-align: left;
+    }
     .content-area .entry-thumb .discount-image {
         width: 140px;
         height: 140px;
@@ -6270,7 +6280,7 @@ input[type="color"]:focus {
 .form-descr {
     background: url("/wp-content/themes/sydney/img/triangle.png") no-repeat right center;
     /*background-size: cover;*/
-    width: 425px;
+    width: 455px;
     padding: 35px 80px 35px 35px;
     margin-top: 10px;
     margin-right: 50px;
