@@ -124,11 +124,11 @@ if(!$_SESSION['urli']) {
 
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
                         <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
-                        <p style="line-height: 50px;
+                        <p class="address-top-menu" style="line-height: 50px;
                          margin-left: 45%;
                          font-size: 16px;
                           min-height: 50px;
-                          margin-top: -5px;;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
+                          margin-top: -5px;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
                     </div>
                 </div>
             </div>

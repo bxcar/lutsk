@@ -443,7 +443,7 @@ session_start();
                                 <!--</columns>-->
 
                                 <!--<columns large=\"8\">-->
-                                <p style=\"Margin: 0; Margin-bottom: 10px; color: #000; display: inline-block; font-family: Arial,sans-serif; font-size: 17px; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; margin-top: 20px; max-width: 340px; padding: 0; text-align: left; vertical-align: top; width: 100%;\">Туристическая компания - это в первую очередь
+                                <p style=\"Margin: 0; Margin-bottom: 10px; color: #000; display: inline-block; font-family: Arial,sans-serif; font-size: 17px; font-weight: 400; line-height: 22px; margin: 0; margin-bottom: 10px; margin-top: 20px; max-width: 350px; padding: 0; text-align: left; vertical-align: top; width: 100%;\">Туристическая компания - это в первую очередь
                                     Команда заряженных и любящих свою работу
                                     профессионалов в области организации путешествий и создания впечатлений!
                                     Согласитесь, так трудно найти надёжную, стабильную и близкую по духу компанию,
@@ -570,7 +570,8 @@ session_start();
                     </tr></tbody></table>
 
                     <!--Текст с самолетиком-->
-                    <div style=\"background: #ff6000;\">
+                    <div style=\"background: #ff6000;
+                    border-radius: 5px;\">
                         <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"15px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 15px; font-weight: 400; hyphens: auto; line-height: 15px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
                         <table class=\"row\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\">
                             <div>
@@ -640,7 +641,7 @@ session_start();
                               max-width: 600px;
                               /*padding: 10px;*/
                               /*padding-top: 10px;*/\">
-                                    <img style=\"-ms-interpolation-mode: bicubic; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-big.png\" alt=\"photo-small\">
+                                    <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-big.png\" alt=\"photo-small\">
                                     <!--<spacer size=\"10\"></spacer>-->
                                 </div>
                                 <!--<div style=\"
@@ -689,6 +690,188 @@ session_start();
 <th class=\"expander\" style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th></tr></table></th>
                     </tr></tbody></table>
 
+
+                    <!--Плиточки для стран-->
+                    <!--1-->
+                    <table class=\"row\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\">
+                        <th class=\"small-12 large-12 columns first last\" style=\"Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;\"><table style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><th style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;\">
+                            <div style=\"/*text-align: center !important;*/\">
+                                <div style=\"
+                            display: inline-block;
+                            background: #fff;
+                             width: 100%;
+                              max-width: 580px;
+                              padding: 10px;
+                              padding-left: 0;\">
+                                    <div style=\"width: 47%; display: inline-block; padding-right: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 350$ на двоих
+                                        </a>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <!--</div>-->
+                                    </div>
+
+
+                                    <!--<div style=\"
+                                 display: inline-block;
+                                 background: #fff;
+                                 width: 100%;
+                                 max-width: 240px;
+                                 padding: 10px;\">-->
+                                    <div style=\"width: 47%; display: inline-block; padding-left: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 475$ на двоих
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                            </div>
+                        </th>
+<th class=\"expander\" style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th></tr></table></th>
+                    </tr></tbody></table>
+                    <!--//1-->
+
+                    <!--2-->
+                    <table class=\"row\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\">
+                        <th class=\"small-12 large-12 columns first last\" style=\"Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;\"><table style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><th style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;\">
+                            <div style=\"/*text-align: center !important;*/\">
+                                <div style=\"
+                            display: inline-block;
+                            background: #fff;
+                             width: 100%;
+                              max-width: 580px;
+                              padding: 10px;
+                              padding-left: 0;\">
+                                    <div style=\"width: 47%; display: inline-block; padding-right: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 350$ на двоих
+                                        </a>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <!--</div>-->
+                                    </div>
+
+
+                                    <!--<div style=\"
+                                 display: inline-block;
+                                 background: #fff;
+                                 width: 100%;
+                                 max-width: 240px;
+                                 padding: 10px;\">-->
+                                    <div style=\"width: 47%; display: inline-block; padding-left: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 475$ на двоих
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                            </div>
+                        </th>
+<th class=\"expander\" style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th></tr></table></th>
+                    </tr></tbody></table>
+                    <!--//2-->
+
+                    <!--3-->
+                    <table class=\"row\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\">
+                        <th class=\"small-12 large-12 columns first last\" style=\"Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;\"><table style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><th style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;\">
+                            <div style=\"/*text-align: center !important;*/\">
+                                <div style=\"
+                            display: inline-block;
+                            background: #fff;
+                             width: 100%;
+                              max-width: 580px;
+                              padding: 10px;
+                              padding-left: 0;\">
+                                    <div style=\"width: 47%; display: inline-block; padding-right: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 350$ на двоих
+                                        </a>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <!--</div>-->
+                                    </div>
+
+
+                                    <!--<div style=\"
+                                 display: inline-block;
+                                 background: #fff;
+                                 width: 100%;
+                                 max-width: 240px;
+                                 padding: 10px;\">-->
+                                    <div style=\"width: 47%; display: inline-block; padding-left: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 475$ на двоих
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                            </div>
+                        </th>
+<th class=\"expander\" style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th></tr></table></th>
+                    </tr></tbody></table>
+                    <!--//3-->
+
+                    <!--4-->
+                    <table class=\"row\" style=\"border-collapse: collapse; border-spacing: 0; display: table; padding: 0; position: relative; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\">
+                        <th class=\"small-12 large-12 columns first last\" style=\"Margin: 0 auto; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0 auto; padding: 0; padding-bottom: 16px; padding-left: 16px; padding-right: 16px; text-align: left; width: 564px;\"><table style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><th style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0; text-align: left;\">
+                            <div style=\"/*text-align: center !important;*/\">
+                                <div style=\"
+                            display: inline-block;
+                            background: #fff;
+                             width: 100%;
+                              max-width: 580px;
+                              padding: 10px;
+                              padding-left: 0;\">
+                                    <div style=\"width: 47%; display: inline-block; padding-right: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 350$ на двоих
+                                        </a>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <!--</div>-->
+                                    </div>
+
+
+                                    <!--<div style=\"
+                                 display: inline-block;
+                                 background: #fff;
+                                 width: 100%;
+                                 max-width: 240px;
+                                 padding: 10px;\">-->
+                                    <div style=\"width: 47%; display: inline-block; padding-left: 2%;\">
+                                        <h2 style=\"Margin: 0; Margin-bottom: 0; color: inherit; font-family: Arial,sans-serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin: 0; margin-bottom: 0; padding: 0; text-align: center; word-wrap: normal;\">Страна</h2>
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <img style=\"-ms-interpolation-mode: bicubic; border-radius: 5px; clear: both; display: block; max-width: 100%; outline: none; text-decoration: none; width: 100% !important;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/photo-small.png\" alt=\"photo-small\">
+                                        <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                                        <a style=\"Margin: 0; background: #fc4a4a; border-radius: 4px; color: #ffffff; display: block; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 1.3; margin: 0; max-width: 100% !important; padding: 7px; text-align: center; text-decoration: none;\" href=\"#\">от 475$ на двоих
+                                        </a>
+                                    </div>
+                                </div>
+                                <table class=\"spacer\" style=\"border-collapse: collapse; border-spacing: 0; padding: 0; text-align: left; vertical-align: top; width: 100%;\"><tbody><tr style=\"padding: 0; text-align: left; vertical-align: top;\"><td height=\"10px\" style=\"-moz-hyphens: auto; -webkit-hyphens: auto; Margin: 0; border-collapse: collapse !important; color: #000; font-family: Arial,sans-serif; font-size: 10px; font-weight: 400; hyphens: auto; line-height: 10px; margin: 0; padding: 0; text-align: left; vertical-align: top; word-wrap: break-word;\">&#xA0;</td></tr></tbody></table> 
+                            </div>
+                        </th>
+<th class=\"expander\" style=\"Margin: 0; color: #000; font-family: Arial,sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; margin: 0; padding: 0 !important; text-align: left; visibility: hidden; width: 0;\"></th></tr></table></th>
+                    </tr></tbody></table>
+                    <!--//4-->
+                    <!--//Плиточки для стран-->
 
                     <!--Кнопка-->
                     <a href=\"http://makintour.com\" style=\"Margin: 0; color: #f61067; font-family: Arial,sans-serif; font-weight: 400; line-height: 1.3; margin: 0; padding: 0; text-align: left; text-decoration: none;\"><img style=\"-ms-interpolation-mode: bicubic; border: none; clear: both; display: block; margin-left: auto; margin-right: auto; max-width: 100%; outline: none; text-decoration: none; width: auto;\" src=\"http://coralborispol.com/wp-content/themes/sydney/img/chimp/site-button.png\" alt=\"makintour.com\"></a>

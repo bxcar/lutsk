@@ -3812,10 +3812,18 @@ input[type="color"]:focus {
         margin-bottom: 5px;
     }
 }
+@media only screen and (max-width: 1100px) {
+    .header-number-text {
+        margin-top:-5px;
+    }
+    .header-number p {
+        margin-top: 0;
+    }
+}
 @media only screen and (min-width: 1100px) {
     .header-number {
         position: absolute;
-        right: 5%;
+        right: 0;
     }
     .header-logo {
         width: 20% !important;
@@ -3826,7 +3834,7 @@ input[type="color"]:focus {
     }
 
     .header-number {
-        width: 38% !important;
+        width: 48% !important;
     }
 
     .header-number p {
@@ -3878,6 +3886,13 @@ input[type="color"]:focus {
 
 /* Smaller than standard 1200 */
 @media only screen and (max-width: 1199px) {
+    .header-number {
+        right: 5%;
+    }
+    .address-top-menu {
+        display: none !important;
+    }
+
     #popmake-129,
     #popmake-599,
     #popmake-597,
@@ -3993,12 +4008,23 @@ input[type="color"]:focus {
    }
 }
 @media only screen and (max-width: 991px) {
+    .header-number-text {
+        left: 0;
+    }
+
+    .site-header {
+        padding-bottom: 20px;
+    }
+    .address-top-menu {
+        display: none;
+    }
     .form-descr {
         background: url('/wp-content/themes/sydney/img/arrow-block(add)_coral_yellow.png') no-repeat right center !important;
         /*background-size: cover;*/
-    background-size: 100% !important;
+    background-size: 80% !important;
+        padding: 35px 80px 35px 75px !important;
         padding-bottom: 180px !important;
-        /*padding: 35px 80px 35px 35px;*/
+        background-position-x: 40px !important;
     margin-top: 15px;
         margin-right: 0 !important;
         text-align: left;
@@ -4398,7 +4424,7 @@ input[type="color"]:focus {
         line-height: 17px;
         font-size: 9px !important;
         position: relative;
-        left: -5px;
+        left: 5px;
         top: 5px;
     }
 
