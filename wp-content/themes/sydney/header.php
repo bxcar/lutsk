@@ -58,12 +58,12 @@ if(!$_SESSION['urli']) {
 {
   "@context": "http://schema.org",
   "@type": "Organization",
-  "name": "Coral Travel Троещина",
-  "url": "http://www.coraltravel.kiev.ua",
-  "logo": "http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png",
+  "name": "Makintour Луцк",
+  "url": "http://www.makintour.com",
+  "logo": "http://www.makintour.com/img/logo.png",
   "contactPoint": [{
     "@type": "ContactPoint",
-    "telephone": "+38-096-711-01-01",
+    "telephone": "8 800 200 12 58",
     "contactType": "customer service"
   }],
   "sameAs": [
@@ -103,7 +103,7 @@ if(!$_SESSION['urli']) {
     <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" class="site-header" role="banner">
         <div class="header-wrap">
             <div class="container">
-                <div class="row">
+                <div class="row top-menu-margin">
                     <div class="col-md-4 col-sm-8 col-xs-12  header-logo">
                         <?php if (get_theme_mod('site_logo')) : ?>
                             <a<!-- href="--><?php /*//echo esc_url(home_url('/')); */?>" title="<?php bloginfo('name'); ?>"><img
@@ -124,7 +124,11 @@ if(!$_SESSION['urli']) {
 
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
                         <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
-                        <p style="line-height: 50px; margin-left: 45%; font-size: 16px; min-height: 50px;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
+                        <p style="line-height: 50px;
+                         margin-left: 45%;
+                         font-size: 16px;
+                          min-height: 50px;
+                          margin-top: -5px;;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
                     </div>
                 </div>
             </div>

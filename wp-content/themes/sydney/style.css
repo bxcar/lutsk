@@ -534,13 +534,13 @@ img.site-logo {
     margin-top: -20px;
 }
 
-.float-header img.site-logo {
+/*.float-header img.site-logo {
     margin-top: -2px;
-}
+}*/
 
-.float-header .header-number p {
+/*.float-header .header-number p {
     margin-top: 2px;
-}
+}*/
 
 .widget ul {
     list-style: none;
@@ -852,7 +852,7 @@ Header
     -ms-transition: all 0.3s ease-out;
     -o-transition: all 0.3s ease-out;
     transition: all 0.3s ease-out;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 
 .admin-bar .site-header,
@@ -957,24 +957,24 @@ Header
     height: 27px;
 }
 
-.site-header.float-header {
-    /*background-color: rgba(0,0,0,0.9);*/
+/*.site-header.float-header {
+    !*background-color: rgba(0,0,0,0.9);*!
     background: #ff0088 !important;
     padding: 5px;
-}
+}*/
 
-.site-header.float-header #mainnav {
+/*.site-header.float-header #mainnav {
     padding: 0;
-}
+}*/
 
-.site-header.float-header #mainnav > ul > li > a {
+/*.site-header.float-header #mainnav > ul > li > a {
     height: 70px;
     line-height: 70px;
-}
+}*/
 
-.site-header.float-header .logo {
+/*.site-header.float-header .logo {
     margin: 20px 0;
-}
+}*/
 
 /* navigation */
 #mainnav {
@@ -3831,19 +3831,20 @@ input[type="color"]:focus {
 
     .header-number p {
         display: inline-block;
+        vertical-align: top;
         text-align: left;
         color: #ffffff;
         font-size: 21px;
         font-family: 'Open Sans', sans-serif;
-        line-height: 20px;
+        line-height: 8px;
         background: url('/wp-content/themes/sydney/img/telephone_not_fill.png') no-repeat;
         background-position-x: 20px;
-        /*background-position-y: 10px;*/
+        background-position-y: -8px;
         /*background-size: 22px;*/
         padding-left: 50px;
         margin-right: -40%;
         margin-left: -20%;
-        margin-top: -14px;
+        /*margin-top: -14px;*/
     }
     .header-number p:last-child {
         background: url('/wp-content/themes/sydney/img/map-marker.png') no-repeat;
@@ -3870,7 +3871,8 @@ input[type="color"]:focus {
 
 @media (min-width: 1200px) {
     .container {
-         width: 1220px !important;
+         /*width: 1220px !important;*/
+         width: 100% !important;
     }
 }
 
@@ -3916,10 +3918,10 @@ input[type="color"]:focus {
         margin-top: -15px;
     }
 
-    .float-header .header-number {
+    /*.float-header .header-number {
         width: 14% !important;
         margin-top: -5px;
-    }
+    }*/
 
     .header-number p {
         text-align: left;
@@ -6979,4 +6981,21 @@ a.back-to-main1 {
 .req-list li img {
     width: 100px !important;
     position: static;
+}
+
+.top-menu-margin {
+    margin-top: -5px;
+}
+
+/*
+.float-header .top-menu-margin {
+    margin-top: -5px;
+}
+
+.float-header .header-number {
+    margin-top: 10px;
+}*/
+
+.site-header.float-header {
+    background-color: #0088e7 !important;
 }
