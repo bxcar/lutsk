@@ -151,13 +151,41 @@ AND pmet.meta_value = p.id";
             $result1 = mysqli_query($db, $sql1) or die(mysqli_error($db));
             $result2 = mysqli_query($db, $sql2) or die(mysqli_error($db));
 
+
+            $goods_q = array();
+            $args_flavor = array(
+                'post_type' => 'post', //slag
+                'posts_per_page' => 1000,
+            );
+            $flavor = new WP_Query($args_flavor);
+            if ($flavor->have_posts()) :
+                $i = 0;
+                while ($flavor->have_posts()) :
+                    $flavor->the_post();
+
+                    $goods_q[$i]['post_id'] = get_the_ID();
+                    $goods_q[$i]['guid'] = get_the_post_thumbnail_url();
+                    $goods_q[$i]['hotel'] = get_the_content();
+                    $goods_q[$i]['country'] = get_the_title();
+                    $goods_q[$i]['discount'] = wp_get_post_tags(get_the_ID());
+                $i++;
+                endwhile;
+            endif;
+
             for ($i = 0; $i < mysqli_num_rows($result); $i++) {
                 $goods[$i] = mysqli_fetch_assoc($result);
                 $goods_img[$i] = mysqli_fetch_assoc($result1);
                 $goods_discount[$i] = mysqli_fetch_assoc($result2);
-                $goods[$i]['guid'] = $goods_img[$i]['guid'];
-                $goods[$i]['discount'] = $goods_discount[$i]['meta_value'];
-                $goods[$i]['post_id'] = $goods_discount[$i]['post_id'];
+
+//                $goods[$i]['guid'] = $goods_img[$i]['guid'];
+                $goods[$i]['guid'] = $goods_q[$i]['guid'];
+//                $goods[$i]['discount'] = $goods_discount[$i]['meta_value'];
+                $promt_val = (array)$goods_q[$i]['discount'][0];
+//                print_r($promt_val);
+                $goods[$i]['name'] = $promt_val['name'];
+//                $goods[$i]['post_id'] = $goods_discount[$i]['post_id'];
+                $goods[$i]['post_id'] = $goods_q[$i]['post_id'];
+                $goods[$i]['post_title'] = $goods_q[$i]['country'];
 
                 if ($id == 'Все страны' or $id == 'price-default') {
 
