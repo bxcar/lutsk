@@ -105,10 +105,12 @@ AND pmet.meta_value = p.id";
                 if ($id == 'price_sorta') {
                     $sql .= " ORDER BY length(t.name), t.name ASC";
                     $sql2 .= " ORDER BY length(t.name), t.name ASC";
-                } else if ($id == 'price_sortb') {
+                }
+                else if ($id == 'price_sortb') {
                     $sql .= " ORDER BY cast(t.name as unsigned) DESC";
                     $sql2 .= " ORDER BY cast(t.name as unsigned) DESC";
-                } else if ($id == 'Все страны' or $id == 'price-default') {
+                }
+                else if ($id == 'Все страны' or $id == 'price-default') {
 //                $sql .= " ORDER BY cast(p.post_date as unsigned) DESC";
                     $sql = "SELECT p.id, p.post_title, p.post_content, t.name FROM wp_posts p, wp_terms t, wp_term_taxonomy tx, wp_term_relationships r
                         WHERE t.term_id=tx.term_id 
@@ -118,16 +120,19 @@ AND pmet.meta_value = p.id";
                         AND p.post_status != 'trash'
                         ORDER BY cast(p.id AS UNSIGNED) DESC";
 //                AND (SELECT p.id FROM wp_posts po WHERE po.id = p.post_parent)
-                } else {
+                }
+                else {
                     $sql = $sql_for_counry_title_and_other . " AND p.post_title = '$id'";
                 }
             }
             if ($id) {
                 if ($id == 'price_sorta') {
                     $sql1 .= " ORDER BY length(t.name), t.name ASC";
-                } else if ($id == 'price_sortb') {
+                }
+                else if ($id == 'price_sortb') {
                     $sql1 .= " ORDER BY cast(t.name as unsigned) DESC";
-                } else if ($id == 'Все страны' or $id == 'price-default') {
+                }
+                else if ($id == 'Все страны' or $id == 'price-default') {
                     $sql1 = "SELECT p.guid FROM wp_posts p, wp_terms t, wp_term_taxonomy tx, wp_term_relationships r, wp_postmeta pmet
                             WHERE p.post_status != 'trash'
                             AND p.post_type = 'attachment'
@@ -139,7 +144,8 @@ AND pmet.meta_value = p.id";
                             AND (SELECT p.id FROM wp_posts po WHERE po.id = p.post_parent)
                             ORDER BY cast(p.post_parent AS UNSIGNED) DESC";
 
-                } else {
+                }
+                else {
                     $sql1 = $sql_for_country_image . " AND (SELECT p.id FROM wp_posts po WHERE po.post_title = '$id' AND po.id = p.post_parent)";
                 }
             }
@@ -151,43 +157,45 @@ AND pmet.meta_value = p.id";
             $result1 = mysqli_query($db, $sql1) or die(mysqli_error($db));
             $result2 = mysqli_query($db, $sql2) or die(mysqli_error($db));
 
+            if ($id == 'Все страны' or $id == 'price-default') {
+                $goods_q = array();
+                $args_flavor = array(
+                    'post_type' => 'post', //slag
+                    'posts_per_page' => 1000,
+                );
+                $flavor = new WP_Query($args_flavor);
+                if ($flavor->have_posts()) :
+                    $i = 0;
+                    while ($flavor->have_posts()) :
+                        $flavor->the_post();
 
-            $goods_q = array();
-            $args_flavor = array(
-                'post_type' => 'post', //slag
-                'posts_per_page' => 1000,
-            );
-            $flavor = new WP_Query($args_flavor);
-            if ($flavor->have_posts()) :
-                $i = 0;
-                while ($flavor->have_posts()) :
-                    $flavor->the_post();
-
-                    $goods_q[$i]['post_id'] = get_the_ID();
-                    $goods_q[$i]['guid'] = get_the_post_thumbnail_url();
-                    $goods_q[$i]['hotel'] = get_the_content();
-                    $goods_q[$i]['country'] = get_the_title();
-                    $goods_q[$i]['discount'] = wp_get_post_tags(get_the_ID());
-                $i++;
-                endwhile;
-            endif;
+                        $goods_q[$i]['post_id'] = get_the_ID();
+                        $goods_q[$i]['guid'] = get_the_post_thumbnail_url();
+                        $goods_q[$i]['hotel'] = get_the_content();
+                        $goods_q[$i]['country'] = get_the_title();
+                        $goods_q[$i]['discount'] = wp_get_post_tags(get_the_ID());
+                        $i++;
+                    endwhile;
+                endif;
+            }
 
             for ($i = 0; $i < mysqli_num_rows($result); $i++) {
                 $goods[$i] = mysqli_fetch_assoc($result);
                 $goods_img[$i] = mysqli_fetch_assoc($result1);
                 $goods_discount[$i] = mysqli_fetch_assoc($result2);
 
-//                $goods[$i]['guid'] = $goods_img[$i]['guid'];
-                $goods[$i]['guid'] = $goods_q[$i]['guid'];
-//                $goods[$i]['discount'] = $goods_discount[$i]['meta_value'];
-                $promt_val = (array)$goods_q[$i]['discount'][0];
-//                print_r($promt_val);
-                $goods[$i]['name'] = $promt_val['name'];
-//                $goods[$i]['post_id'] = $goods_discount[$i]['post_id'];
-                $goods[$i]['post_id'] = $goods_q[$i]['post_id'];
-                $goods[$i]['post_title'] = $goods_q[$i]['country'];
-
                 if ($id == 'Все страны' or $id == 'price-default') {
+
+                    //                $goods[$i]['guid'] = $goods_img[$i]['guid'];
+                    $goods[$i]['guid'] = $goods_q[$i]['guid'];
+//                $goods[$i]['discount'] = $goods_discount[$i]['meta_value'];
+                    $promt_val = (array)$goods_q[$i]['discount'][0];
+//                print_r($promt_val);
+                    $goods[$i]['name'] = $promt_val['name'];
+//                $goods[$i]['post_id'] = $goods_discount[$i]['post_id'];
+                    $goods[$i]['post_id'] = $goods_q[$i]['post_id'];
+                    $goods[$i]['post_title'] = $goods_q[$i]['country'];
+                    $goods[$i]['post_content'] = $goods_q[$i]['hotel'];
 
                     /*if ($value['name'] > $goods[$i]['name']) {
                         if (isset($goods[$i])) {
@@ -263,7 +271,7 @@ AND pmet.meta_value = p.id";
                 $count_for_price_total_result = count($goods_min_price_total);
 //                $goods_min_price_total = array_slice($goods_min_price_total,0,8);
                 for ($i = 0; $i <= $count_for_price_total_result * 10; $i++) {
-                     //default list of countries on main page
+                    //default list of countries on main page
                     if (($goods_min_price_total[$i]['post_title'] == 'ОАЭ')
                         || ($goods_min_price_total[$i]['post_title'] == 'Шри-Ланка')
                         || ($goods_min_price_total[$i]['post_title'] == 'Таиланд')
@@ -273,7 +281,8 @@ AND pmet.meta_value = p.id";
                         || ($goods_min_price_total[$i]['post_title'] == 'Индия')
                         || ($goods_min_price_total[$i]['post_title'] == 'Танзания')
                     ) {
-                    } else {
+                    }
+                    else {
                         if (isset($goods_min_price_total[$i])) {
                             unset($goods_min_price_total[$i]);
                         }
@@ -282,26 +291,61 @@ AND pmet.meta_value = p.id";
                 return $goods_min_price_total;
             }
 
-//                print_r ($goods_min_price_total);
-
             return $goods;
         }
 
         if ($_GET['sort_id']) {
             $id = strip_tags($_GET['sort_id']);
+
+
             $goods = get_goods($db, $id);
             //$goods is empty?
-            if(count($goods) == 0) {
+            if (count($goods) == 0) {
                 $goods = get_goods($db, 'Все страны');
+            }
+            $goods_q_s = array();
+            $args_flavor_s = array(
+                'post_type' => 'post', //slag
+                'posts_per_page' => 2000,
+            );
+            $i_in = 0;
+            $flavor_s = new WP_Query($args_flavor_s);
+            if ($flavor_s->have_posts()) :
+                $i_in = 0;
+                while ($flavor_s->have_posts()) :
+                    $flavor_s->the_post();
+                    if(get_the_title() == $_GET['sort_id']){
+                        $goods_q_s[$i_in]['post_id'] = get_the_ID();
+                        $goods_q_s[$i_in]['guid'] = get_the_post_thumbnail_url();
+                        $goods_q_s[$i_in]['hotel'] = get_the_content();
+                        $goods_q_s[$i_in]['country'] = get_the_title();
+                        $goods_q_s[$i_in]['discount'] = wp_get_post_tags(get_the_ID());
+//                        echo "Страна";
+                        $i_in++;
+                    }
+                endwhile;
+            endif;
+            for($i = 0; $i < $i_in; $i++) {
+                $goods[$i]['guid'] = $goods_q_s[$i]['guid'];
+                $promt_val_s = (array)$goods_q_s[$i]['discount'][0];
+                $goods[$i]['name'] = $promt_val_s['name'];
+                $goods[$i]['id'] = $goods_q_s[$i]['post_id'];
+                $goods[$i]['post_title'] = $goods_q_s[$i]['country'];
+                $goods[$i]['post_content'] = $goods_q_s[$i]['hotel'];
+//                echo $goods_q_s[$i]['guid'];
             }
             foreach ($goods as $item) {
                 ?>
-                <article itemscope itemtype="http://schema.org/BlogPosting" class="post type-post status-publish format-standard has-post-thumbnail hentry">
-                    <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage" itemid="http://coraltravel.kiev.ua"/> <!--Адрес главной страницы-->
-                    <meta itemprop="dateModified" content="<?php the_modified_time('Y-m-d')?>"/> <!--Дата последнего изменения-->
+                <article itemscope itemtype="http://schema.org/BlogPosting"
+                         class="post type-post status-publish format-standard has-post-thumbnail hentry">
+                    <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage"
+                          itemid="http://coraltravel.kiev.ua"/> <!--Адрес главной страницы-->
+                    <meta itemprop="dateModified" content="<?php the_modified_time('Y-m-d') ?>"/>
+                    <!--Дата последнего изменения-->
 
                     <!--Разметка публикатора(адрес, логотип, название сайта)-->
-                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization" style="display:none;">
+                    <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"
+                         style="display:none;">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
                             <span itemprop="streetAddress">просп. Маяковского 44-А</span>
                             <span itemprop="postalCode">01001</span>
@@ -309,38 +353,31 @@ AND pmet.meta_value = p.id";
                             <span itemprop="telephone">+38 096 711 01 01</span>
                         </div>
                         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
-                            <img itemprop="url" src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
-                            <img itemprop="image" src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
+                            <img itemprop="url"
+                                 src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
+                            <img itemprop="image"
+                                 src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
                             <meta itemprop="width" content="100">
                             <meta itemprop="height" content="43">
                         </div>
                         <meta itemprop="name" content="Coral Travel - г.Киев">
                     </div>
-                    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="entry-thumb" style="display:none;">
+                    <div itemprop="image" itemscope itemtype="https://schema.org/ImageObject" class="entry-thumb"
+                         style="display:none;">
                         <meta itemprop="width" content="272">
                         <meta itemprop="height" content="233">
                         <img itemprop="url" src="<?php $item['guid'] ?>">
                         <img itemprop="image" src="<?php $item['guid'] ?>">
                     </div>
                     <div itemscope itemtype="https://schema.org/ImageObject" style="display:none;">
-                        <img itemprop="image" src="<?php $item['guid'] ?>" >
+                        <img itemprop="image" src="<?php $item['guid'] ?>">
                     </div>
 
                     <div class="meta-post" style="display: none">
                         <?php sydney_posted_on(); ?>
                     </div><!-- .entry-meta -->
                     <div class="entry-thumb">
-                        
-                        <?php /*foreach ($goods as $item_in)
-            {
-            if ($item['id'] == $item_in['post_id']) { */ ?><!--
-                <?/*= $item['id'] */ ?>
-                <?/*= $item['post_id'] */ ?>
-                --><?php
-                        /*                break;
-                                    }
-                                }
-                                                */ ?>
+
 
                         <?php
                         $item_id = $item['id'];
@@ -350,16 +387,8 @@ AND pmet.meta_value = p.id";
                             AND pmet.post_id =  $item_id";
                         $result_sql_disc = mysqli_query($db, $sql_disc) or die(mysqli_error($db));
                         $result_sql_disc_final = mysqli_fetch_assoc($result_sql_disc);
-                        /*foreach ($goods as $item_in_disc)
-                        {
-                            if ($item['id'] == $item_in_disc['post_id']) { */ ?><!--
-                        <?/*= $item['discount'] */ ?>
-                        --><?php
-                        /*                        break;
-                                            }
-                                        }*/
-                        ?>
-                        <?php if ($result_sql_disc_final['meta_value']) { ?>
+
+                        if ($result_sql_disc_final['meta_value']) { ?>
                             <img class="discount-image" src="/wp-content/themes/sydney/img/discount.png">
                             <span style="right: 4%; top: 5.9%;"
                                   class="discount-amount"><?= $result_sql_disc_final['meta_value'] ?></span>
@@ -372,8 +401,9 @@ AND pmet.meta_value = p.id";
 
                     <header class="entry-header">
                         <h2 itemprop="headline" class="title-post"><span id="country-title" class="country-title-class"
-                                                     style="color: #0088e7;"
-                                                     rel="bookmark"><?= $item['post_title'] ?> </span></h2>
+                                                                         style="color: #0088e7;"
+                                                                         rel="bookmark"><?= $item['post_title'] ?> </span>
+                        </h2>
                     </header><!-- .entry-header -->
 
                     <div itemprop="articleBody" class="entry-post">
@@ -400,7 +430,8 @@ AND pmet.meta_value = p.id";
                 <?php
             }
             exit;
-        } else {
+        }
+        else {
             $goods = get_goods($db);
         }
     } ?>
