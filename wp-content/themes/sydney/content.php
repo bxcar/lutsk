@@ -194,6 +194,7 @@ AND pmet.meta_value = p.id";
                     $goods[$i]['name'] = $promt_val['name'];
 //                $goods[$i]['post_id'] = $goods_discount[$i]['post_id'];
                     $goods[$i]['post_id'] = $goods_q[$i]['post_id'];
+                    $goods[$i]['id'] = $goods_q[$i]['post_id'];
                     $goods[$i]['post_title'] = $goods_q[$i]['country'];
                     $goods[$i]['post_content'] = $goods_q[$i]['hotel'];
 
