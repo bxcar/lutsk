@@ -10,7 +10,7 @@ session_start();
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title>Coral Travel - Троещина</title>
+    <title>Coral Travel - г. Борисполь, ТРЦ АЭРОМОЛЛ</title>
     <meta name="description" content="Страница благодарности посетителям сайта за проявленное желание сотрудничать">
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -63,12 +63,12 @@ session_start();
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-menu">
                         <div class="btn-menu"></div>
-                        <nav id="mainnav" class="mainnav" role="navigation" style="color: red;">
+                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" id="mainnav" class="mainnav" role="navigation" style="color: red;">
                             <?php wp_nav_menu(array('theme_location' => 'primary', 'fallback_cb' => 'sydney_menu_fallback')); ?>
                         </nav><!-- #site-navigation -->
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
-                        <p <!--style="overflow: hidden;-->">096 595 01 01<br><a href="#"><span
+                        <p <!--style="overflow: hidden;-->">098 11 69 555<br><a href="#"><span
                                 class="popmake-522 header-number-text">Закажите&nbsp;обратный&nbsp;звонок</span></a>
                     </div>
                 </div>
@@ -81,46 +81,45 @@ session_start();
         <div class="container content-wrapper">
             <div class="row">
 
-
                 <?php
-                $sendto = 'awesomegame47@gmail.com'; //Адреса, куда будут приходить письма shakrov@ukr.net, seo@makintour.com
-                //$sendto = 'seo@makintour.com, info@coralborispol.com'; //Адреса, куда будут приходить письма
+                //$sendto  = 'malanchukdima@mail.ru'; //Адреса, куда будут приходить письма shakrov@ukr.net, seo@makintour.com
+                $sendto = 'seo@makintour.com, info@coralborispol.com, malanchukdima@mail.ru'; //Адреса, куда будут приходить письма
 
-                $phone = $_POST['tel-564'];
-                $name = $_POST['your-name'];
-                $comment = $_POST['your-message'];
+                $phone = trim(strip_tags($_POST['tel-564']));
+                $name = trim(strip_tags($_POST['your-name']));
+                $comment  = $_POST['your-message'];
                 $p = trim(strip_tags($_POST['target'], '<br>'))
                     . trim(strip_tags($_POST['target-manager'], '<br>'))
                     . trim(strip_tags($_POST['callback'], '<br>'))
-                    . trim(strip_tags($_POST['order'], '<br>'))
-                    . trim(strip_tags($_POST['get_all_spec'], '<br>'));
+                    . trim(strip_tags($_POST['order'], '<br>'));
 
                 //                global $urli;
-                $url = 'http://' . $_SERVER['HTTP_HOST'] . $_SESSION['urli'];
+                $url =  'http://'.$_SERVER['HTTP_HOST'].$_SESSION['urli'];
 
                 // Формирование заголовка письма
 
-                $subject = '[Новая заявка - Луцк]';
+                $subject = '[Новая заявка - Coral Travel г. Борисполь]';
                 //                $headers  = "From: ".$name." \r\n";
                 //                $headers .= "Reply-To: ". strip_tags($name) . "\r\n";
                 //                $headers .= "MIME-Version: 1.0\r\n";
                 $headers = "Content-Type: text/html;charset=utf-8 \r\n";
 
                 // Формирование тела письма
-                $msg = "<html><body style='font-family:Arial,sans-serif;'>";
-                $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новая заявка - Coral Travel Троещина</h2>\r\n";
+                $msg  = "<html><body style='font-family:Arial,sans-serif;'>";
+                $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новая заявка - Coral Travel г. Борисполь</h2>\r\n";
                 $msg .= "<p><strong>Имя:</strong> " . $name . "</p>\r\n";
                 $msg .= "<p><strong>Телефон:</strong> " . $phone . "</p>\r\n";
-                if ($_POST['your-message']) {
+                if($_POST['your-message']) {
                     $msg .= "<p><strong>Пожелания к туру:</strong> " . $comment . "</p>\r\n";
                 }
                 $msg .= "<p><strong>Идентификатор формы:</strong> " . $p . "</p>\r\n";
-                $msg .= "<p><strong>URL адрес:</strong> " . $url . "</p>\r\n";
+                $msg .= "<p><strong>URL адрес:</strong> " .$url. "</p>\r\n";
                 $msg .= "</body></html>";
 
-                // отправка сообщения
-                if (mail($sendto, $subject, $msg, $headers)) {
-                    echo "<div class=\"thanks-text\">
+                if ((!empty($name)) && (!empty($phone))) {
+                    // отправка сообщения
+                    if (mail($sendto, $subject, $msg, $headers)) {
+                        echo "<div class=\"thanks-text\">
                     <p class=\"thanks-text-header\">Спасибо за заявку!<br>
                         <span class=\"thanks-text-header-pre\">Наш менеджер скоро свяжется с Вами</span></p>
                     <a href=\"javascript:history.back();\" class=\"back-to-main1\">Вернуться&ensp;назад</a>
@@ -139,9 +138,9 @@ session_start();
                         </div>
                     </div>
                 </div>";
-                }
-                else {
-                    echo "<div class=\"thanks-text\">
+                    }
+                    else {
+                        echo "<div class=\"thanks-text\">
                     <p style='font-size: 30px;' class=\"thanks-text-header\">
                         К сожалениею при отправке формы произошла ошибка&nbsp;:(<br>
                         <span style='display: inline-block; line-height: 25px; margin-top: 20px;' class=\"thanks-text-header-pre\">Вернитесь обратно и попробуйте еще раз<br>
@@ -163,29 +162,52 @@ session_start();
                         </div>
                     </div>
                 </div>";
+                    }
+                    ?>
+
+                    <?php
+                    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                        $curl = curl_init();
+                        curl_setopt_array($curl, array(
+                            CURLOPT_RETURNTRANSFER => true,
+                            CURLOPT_URL =>
+                                'http://api.u-on.ru/4z9lLpPG35d4M8UEd9pu/lead/create.json',
+                            CURLOPT_POST => true,
+                            CURLOPT_POSTFIELDS =>
+                                'source='.urlencode('ОНЛАЙН: "Coral Бориспіль"').
+                                '&u_name='.urlencode($_POST['your-name']).
+                                '&u_phone='.urlencode($_POST['tel-564']).
+                                '&note='.urlencode($url)."\n".urlencode($_POST['your-message'])
+                        ));
+                        $resp = curl_exec($curl);
+                        curl_close($curl);
+                    }
+                    /*."  ".urlencode($p)*/
+                }
+                else {
+                    echo "<div class=\"thanks-text\">
+                    <p style='font-size: 30px;' class=\"thanks-text-header\">
+                        К сожалениею при отправке формы произошла ошибка&nbsp;:(<br>
+                        <span style='display: inline-block; line-height: 25px; margin-top: 20px;' class=\"thanks-text-header-pre\">Возможно вы не заполнили все поля, попробуйте еще раз<br>
+                        (также вы можете связаться с нами по электронной почте либо по номеру телефона, которые указаны на сайте)</span>
+                    </p>
+                    <a href=\"javascript:history.back();\" class=\"back-to-main1\">Вернуться&ensp;назад</a>
+                    <div class=\"social-thanks\">
+                        <p class=\"thanks-text-header-pre\">Мы в социальных сетях</p>
+                        <div class=\"social-thanks-images\">
+                           <a href=\"https://www.facebook.com/borispol.coraltravel/\">
+                                <img src=\"/wp-content/themes/sydney/img/social-thanks/facebook.png\">
+                            </a>
+                            <a href=\"https://vk.com/borispol.coraltravel\">
+                                <img src=\"/wp-content/themes/sydney/img/social-thanks/vk.png\">
+                            </a>
+                            <!--<a href=\"#\"><img src=\"/wp-content/themes/sydney/img/social-thanks/utube.png\"></a>
+                            <a href=\"#\"><img src=\"/wp-content/themes/sydney/img/social-thanks/insta.png\"></a>
+                            <a href=\"#\"><img src=\"/wp-content/themes/sydney/img/social-thanks/odno.png\"></a>-->
+                        </div>
+                    </div>
+                </div>";
                 }
                 ?>
-
-                <?php
-                /*if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-                    $curl = curl_init();
-                    curl_setopt_array($curl, array(
-                        CURLOPT_RETURNTRANSFER => true,
-                        CURLOPT_URL =>
-                            'http://api.u-on.ru/du4A1ZlNnyLIr90Af17E/lead/create.json',
-                        CURLOPT_POST => true,
-                        CURLOPT_POSTFIELDS =>
-                            'source=' . urlencode('ОНЛАЙН: Лендінг "Coral Троєщина"') .
-                            '&u_name=' . urlencode($_POST['your-name']) .
-                            '&u_phone=' . urlencode($_POST['tel-564']) .
-                            '&note=' . urlencode($url) . "\n" . urlencode($_POST['your-message']) .
-                            '&r_u_id=19297'
-                    ));
-                    $resp = curl_exec($curl);
-                    curl_close($curl);
-                }*/
-                /*."  ".urlencode($p)*/
-                ?>
-
 
 

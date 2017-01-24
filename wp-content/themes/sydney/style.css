@@ -1383,7 +1383,7 @@ Layout
     /*background-color: #0009FF;*/
     filter: alpha(opacity=67);
     opacity: 0.67;
-    background-color: #626b72 !important;
+    background-color: #000 !important;
 }
 
 .page-wrap {
@@ -3819,6 +3819,18 @@ input[type="color"]:focus {
     .header-number p {
         margin-top: 0;
     }
+    .header-number p {
+        margin-top: 0 !important;
+    }
+
+    .header-number-text {
+        left: 1px !important;
+        top: -2px !important;
+    }
+
+    .header-number {
+        width: 16%;
+    }
 }
 @media only screen and (min-width: 1100px) {
     .header-number {
@@ -3834,7 +3846,7 @@ input[type="color"]:focus {
     }
 
     .header-number {
-        width: 48% !important;
+        width: 48%;
     }
 
     .header-number p {
@@ -3888,6 +3900,7 @@ input[type="color"]:focus {
 @media only screen and (max-width: 1199px) {
     .header-number {
         right: 5%;
+        width: 48%;
     }
     .address-top-menu {
         display: none !important;
@@ -3921,7 +3934,7 @@ input[type="color"]:focus {
     }*/
 
     .header-logo {
-        width: 20% !important;
+        width: 30% !important;
     }
 
     .header-menu {
@@ -3929,7 +3942,7 @@ input[type="color"]:focus {
     }
 
     .header-number {
-        width: 14% !important;
+        width: 16%;
         margin-top: -15px;
     }
 
@@ -4013,7 +4026,7 @@ input[type="color"]:focus {
     }
 
     .site-header {
-        padding-bottom: 20px;
+        /*padding-bottom: 20px;*/
     }
     .address-top-menu {
         display: none;
@@ -4145,6 +4158,8 @@ input[type="color"]:focus {
         padding: 0;
         padding-left: 45px;
         margin-bottom: -25px;
+        float: right;
+        margin-top: -15px;
     }
 
     .last {
@@ -4506,7 +4521,8 @@ input[type="color"]:focus {
     }
 
     .site-header img.site-logo {
-        margin-top: 0;
+        margin-top: -5px;
+        /*width: 185px;*/
     }
 
     .row {
@@ -4614,8 +4630,12 @@ input[type="color"]:focus {
         display: inline-block;
         vertical-align: top;
         /*margin-left: -35px;*/
-        margin-left: -14px;
-        margin-top: -7px;
+        margin-left: -1px;
+        margin-top: 0;
+    }
+
+    .btn-menu {
+        display: none;
     }
 
     .header-number p {
@@ -5178,6 +5198,13 @@ input[type="color"]:focus {
         margin-left: -40px;
     }
 }
+
+@media only screen and (max-width: 590px) {
+    .header-logo {
+        width: 43% !important;
+    }
+}
+
 @media only screen and (max-width: 530px) {
     .content-hotel-title {
         height: 35px;
@@ -5200,9 +5227,11 @@ input[type="color"]:focus {
     .content-area .hentry {
         height: 420px;
     }
+
 }
 
 @media only screen and (max-width: 479px) {
+
     .content-area .entry-thumb .discount-image {
         width: 70px;
         height: 70px;
@@ -5295,18 +5324,15 @@ input[type="color"]:focus {
     }
 
     .header-logo {
-        width: 35% !important;
+        width: 60% !important;
     }
 
-    /*.header-number p {
-        margin-top: -20px;
-        margin-left: -5px;
+    .top-menu-margin div:nth-child(2) {
+        display: none;
+    }
 
-    }*/
     .header-number p {
-        /*font-size: 16px !important;*/
         margin-top: -12px !important;
-        /*margin-left: -34px !important;*/
         margin-left: -50px !important;
     }
 
