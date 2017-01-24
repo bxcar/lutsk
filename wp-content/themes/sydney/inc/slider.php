@@ -50,7 +50,7 @@ function sydney_slider_template() {
                     <div class="overlay-main"></div>
                         <div class="slide-inner">
                             <div class="contain animated fadeInRightBig text-slider text-slider-none">
-                                <a class="abs-link modal-link" href="#works"><span>Як це працює?</span></a>
+                                <a class="popmake-how_it_works abs-link modal-link" href="#works"><span>Як це працює?</span></a>
                                 <h1 id="multi-title" class="maintitle maintitle-none">Гарячі тури<br> з гарантією <span style="color: #ff5516;">КРАЩОЇ</span> ціни в<br> Луцьку<?php //echo esc_html($slider_title_1); ?></h1>
                                 <p class="subtitle subtitle-none"><?php echo esc_html($slider_subtitle_1); ?></p>
                             </div>

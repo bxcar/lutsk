@@ -48,7 +48,7 @@ if (!$_SESSION['urli']) {
         <?php endif; ?>
     <?php endif; ?>
 
-    <?php wp_head(); ?>
+    <?php wp_head();?>
 
     <?php include "tracking_codes_and_jivosite/vk.php" ?>
     <?php include "tracking_codes_and_jivosite/facebook_pixel_code.php" ?>
@@ -79,15 +79,11 @@ if (!$_SESSION['urli']) {
 <!--    <script src="/wp-content/themes/sydney/js/jquery-3.1.1.min.js"></script>-->
 <!--    <script src="/wp-content/themes/sydney/js/mask/src/jquery.maskedinput.js"></script>-->
     <script>
-        $(document).ready(function () {
+        jQuery(document).ready(function(){
 
-//            $.mask.definitions['~'] = '[+-]';
-
-//            $('input[name=tel-564]').mask('+380999999999');
-            jQuery(".wpcf7-validates-as-tel").mask("+38-999-999-9999",{placeholder:"_"});
-        }
+            jQuery(".phone").mask("+38-999-999-9999",{placeholder:"_"});
+        });
     </script>
-<?php wp_head();?>
 </head>
 
 <body <?php body_class(); ?>>
