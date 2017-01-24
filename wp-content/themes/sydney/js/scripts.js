@@ -3078,7 +3078,7 @@ jQuery(document).ready(function () {
                         jQuery("#load").fadeOut(500);
                     },
                     error: function (html) {
-                        alert("Error");
+                        // alert("Error");
                     }
                 });
             });
@@ -3110,7 +3110,7 @@ jQuery(document).ready(function () {
                         jQuery("#load").fadeOut(500);
                     },
                     error: function (html) {
-                        alert("Error");
+                        // alert("Error");
                     }
                 });
             });

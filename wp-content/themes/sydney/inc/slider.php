@@ -168,7 +168,8 @@ function sydney_slider_button() {
                                         <div style="display: none;">
                                             <input type="hidden" name="order" value="Верхняя форма на главной странице">
                                         </div>
-                                            <span class="wpcf7-form-control-wrap your-name"><input required type="text"
+                                            <span class="wpcf7-form-control-wrap your-name"><input
+                                            required type="text"
                                                                                                    style="width: 100%;"
                                                                                                    name="your-name"
                                                                                                    placeholder="Ваше ім\'я*"
@@ -177,9 +178,12 @@ function sydney_slider_button() {
                                                                                                    aria-required="true"
                                                                                                    aria-invalid="false"></span>
 
-                                            <span class="wpcf7-form-control-wrap tel-564"><input required type="tel"
+                                            <span class="wpcf7-form-control-wrap tel-564"><input
+                                            pattern="^\+380[0-9]{9}"
+                                             required type="tel"
                                                                                                  style="width: 100%;"
                                                                                                  name="tel-564"
+                                                                                                 id="phone"
                                                                                                  placeholder="Контактний телефон*"
                                                                                                  value=""
                                                                                                  size="40"
@@ -196,7 +200,7 @@ function sydney_slider_button() {
                                         </p>
                                         <div class="wpcf7-response-output wpcf7-display-none"></div>
                                     </form>
-                                    <p class="form-text2">Ми зателефонуємо вам через 10 хвилин, засікайте!</p>
+                                    <p class="form-text2">Менеджер зв\'яжеться з вами найближчим часом</p>
                                 </div>
                             </div>
                         </aside>

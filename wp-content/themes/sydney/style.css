@@ -4720,7 +4720,7 @@ input[type="color"]:focus {
     }
 
     .content-area .hentry {
-        width: 48%;
+        width: 47.5%;
         /*height: 320px;*/
         /*height: 100%;*/
         height: 390px;
@@ -5250,7 +5250,7 @@ input[type="color"]:focus {
     }
 
     .content-area .hentry {
-        height: 420px;
+        height: 330px;
     }
 
 }
@@ -5512,7 +5512,7 @@ input[type="color"]:focus {
     }
 
     .content-area .hentry {
-        width: 48%;
+        width: 47.5%
         /*height: 320px;*/
         /*height: 100%;*/
         height: 290px;
@@ -6793,6 +6793,11 @@ p {
     font-size: 22px;
     font-family: "Open Sans", sans-serif;
 }
+
+#pum_popup_title_508 {
+    /*margin-bottom: 30px;*/
+}
+
 
 #pum_popup_title_1077 {
     margin-bottom: 20px;
