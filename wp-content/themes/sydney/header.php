@@ -163,14 +163,11 @@ if (!$_SESSION['urli']) {
                 <div id="filt" class="filters">
                     <select id="country-select" class="select-spec" style="margin-right: 20px;
                                   margin-left: 25px;">
-                        <option value="Все страны" selected>Все страны</option> <!--country-default-->
+                        <option value="Всі країни" selected>Всі країни</option> <!--country-default-->
                         <!--<option value="Таиланд">Таиланд</option>
                         <option value="ОАЕ">ОАЕ</option>-->
                     </select>
                 </div>
-                <!--                <div style="width: 500px; height: 500px;">-->
                 <div class="fon-class" id="fon">
                     <div class="load-class" id="load"></div>
                 </div>
-
-                <!--                </div>-->

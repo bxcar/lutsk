@@ -24,7 +24,7 @@ if (!$_GET['sort_id'])
             $select = array();
             $select_total = array();
             $result = mysqli_query($db, $sql_select) or die(mysqli_error($db));
-            $select_total[0] = "Все страны";
+            $select_total[0] = "Всі країни";
             for ($i = 0; $i < mysqli_num_rows($result); $i++) {
                 $select[$i] = mysqli_fetch_assoc($result);
 //            $select[$i]['post_title'] = $sql_select[$i]['post_title'];
@@ -110,7 +110,7 @@ AND pmet.meta_value = p.id";
                     $sql .= " ORDER BY cast(t.name as unsigned) DESC";
                     $sql2 .= " ORDER BY cast(t.name as unsigned) DESC";
                 }
-                else if ($id == 'Все страны' or $id == 'price-default') {
+                else if ($id == 'Всі країни' or $id == 'price-default') {
 //                $sql .= " ORDER BY cast(p.post_date as unsigned) DESC";
                     $sql = "SELECT p.id, p.post_title, p.post_content, t.name FROM wp_posts p, wp_terms t, wp_term_taxonomy tx, wp_term_relationships r
                         WHERE t.term_id=tx.term_id 
@@ -132,7 +132,7 @@ AND pmet.meta_value = p.id";
                 else if ($id == 'price_sortb') {
                     $sql1 .= " ORDER BY cast(t.name as unsigned) DESC";
                 }
-                else if ($id == 'Все страны' or $id == 'price-default') {
+                else if ($id == 'Всі країни' or $id == 'price-default') {
                     $sql1 = "SELECT p.guid FROM wp_posts p, wp_terms t, wp_term_taxonomy tx, wp_term_relationships r, wp_postmeta pmet
                             WHERE p.post_status != 'trash'
                             AND p.post_type = 'attachment'
@@ -157,7 +157,7 @@ AND pmet.meta_value = p.id";
             $result1 = mysqli_query($db, $sql1) or die(mysqli_error($db));
             $result2 = mysqli_query($db, $sql2) or die(mysqli_error($db));
 
-            if ($id == 'Все страны' or $id == 'price-default') {
+            if ($id == 'Всі країни' or $id == 'price-default') {
                 $goods_q = array();
                 $args_flavor = array(
                     'post_type' => 'post', //slag
@@ -184,7 +184,7 @@ AND pmet.meta_value = p.id";
                 $goods_img[$i] = mysqli_fetch_assoc($result1);
                 $goods_discount[$i] = mysqli_fetch_assoc($result2);
 
-                if ($id == 'Все страны' or $id == 'price-default') {
+                if ($id == 'Всі країни' or $id == 'price-default') {
 
                     //                $goods[$i]['guid'] = $goods_img[$i]['guid'];
                     $goods[$i]['guid'] = $goods_q[$i]['guid'];
@@ -268,7 +268,7 @@ AND pmet.meta_value = p.id";
             }
 
 
-            if ($id == 'Все страны' or $id == 'price-default') {
+            if ($id == 'Всі країни' or $id == 'price-default') {
                 $count_for_price_total_result = count($goods_min_price_total);
 //                $goods_min_price_total = array_slice($goods_min_price_total,0,8);
                 for ($i = 0; $i <= $count_for_price_total_result * 10; $i++) {
@@ -302,7 +302,7 @@ AND pmet.meta_value = p.id";
             $goods = get_goods($db, $id);
             //$goods is empty?
             if (count($goods) == 0) {
-                $goods = get_goods($db, 'Все страны');
+                $goods = get_goods($db, 'Всі країни');
             }
             $goods_q_s = array();
             $args_flavor_s = array(

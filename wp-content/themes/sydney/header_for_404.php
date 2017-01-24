@@ -9,7 +9,7 @@
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title>Coral Travel - Троещина</title>
+    <title>Makintour Луцьк - 404</title>
     <meta name="description" content="Страница ошибки 404">
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -45,30 +45,38 @@
 <div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'sydney'); ?></a>
 
-    <header id="masthead" class="site-header header-in-thanks" role="banner">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" class="site-header" role="banner">
         <div class="header-wrap">
             <div class="container">
-                <div class="row">
+                <div class="row top-menu-margin">
                     <div class="col-md-4 col-sm-8 col-xs-12  header-logo">
                         <?php if (get_theme_mod('site_logo')) : ?>
-                            <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><img
-                                    class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
-                                    alt="<?php bloginfo('name'); ?>"/></a>
+                            <a<!-- href="--><?php /*//echo esc_url(home_url('/')); */ ?>" title="<?php bloginfo('name'); ?>">
+                            <img
+                                class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
+                                alt="<?php bloginfo('name'); ?>"/></a>
                         <?php else : ?>
-                            <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                                      rel="home"><?php bloginfo('name'); ?></a></h1>
-                            <h2 class="site-description"><?php bloginfo('description'); ?></h2>
+                            <h1 itemprop="headline" class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+                                                                          rel="home"><?php bloginfo('name'); ?></a></h1>
+                            <h2 itemprop="description" class="site-description"><?php bloginfo('description'); ?></h2>
                         <?php endif; ?>
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-menu">
                         <div class="btn-menu"></div>
-                        <nav id="mainnav" class="mainnav" role="navigation" style="color: red;">
+                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" id="mainnav" class="mainnav"
+                             role="navigation" style="color: red;">
                             <?php wp_nav_menu(array('theme_location' => 'primary', 'fallback_cb' => 'sydney_menu_fallback')); ?>
                         </nav><!-- #site-navigation -->
                     </div>
+
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
-                        <p>096 595 01 01<br><a href="#"><span
-                                class="popmake-522 header-number-text">Закажите&nbsp;обратный&nbsp;звонок</span></a>
+                        <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span
+                                class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
+                        <p class="address-top-menu" style="line-height: 50px;
+                         margin-left: 45%;
+                         font-size: 16px;
+                          min-height: 50px;
+                          margin-top: -5px;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
                     </div>
                 </div>
             </div>
@@ -81,16 +89,16 @@
             <div class="row">
 
                    <div class="thanks-text">
-                    <p class="thanks-text-header">Страница не найдена<br>
-                        <span class="thanks-text-header-pre">Сожалеем об этом :(</span></p>
+                    <p class="thanks-text-header">Строрінка не знайдена<br>
+                        <span class="thanks-text-header-pre">Шкодуємо про це :(</span></p>
                     <a href="javascript:history.back();" class="back-to-main1">Вернуться&ensp;назад</a>
                     <div class="social-thanks">
-                        <p class="thanks-text-header-pre">Мы в социальных сетях</p>
+                        <p class="thanks-text-header-pre">Ми в соціальних мережах</p>
                         <div class="social-thanks-images">
-                            <a href="https://www.facebook.com/borispol.coraltravel/">
+                            <!--<a href="https://www.facebook.com/borispol.coraltravel/">
                                 <img src="/wp-content/themes/sydney/img/social-thanks/facebook.png">
-                            </a>
-                            <a href="https://vk.com/borispol.coraltravel">
+                            </a>-->
+                            <a href="https://vk.com/makintour.lutsk">
                                 <img src="/wp-content/themes/sydney/img/social-thanks/vk.png">
                             </a>
                         </div>

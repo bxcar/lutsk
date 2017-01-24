@@ -46,30 +46,38 @@ session_start();
 <div id="page" class="hfeed site">
     <a class="skip-link screen-reader-text" href="#content"><?php _e('Skip to content', 'sydney'); ?></a>
 
-    <header id="masthead" class="site-header header-in-thanks" role="banner">
+    <header itemscope itemtype="http://schema.org/WPHeader" id="masthead" class="site-header" role="banner">
         <div class="header-wrap">
             <div class="container">
-                <div class="row">
+                <div class="row top-menu-margin">
                     <div class="col-md-4 col-sm-8 col-xs-12  header-logo">
                         <?php if (get_theme_mod('site_logo')) : ?>
-                            <a href="<?php echo esc_url(home_url('/')); ?>" title="<?php bloginfo('name'); ?>"><img
-                                    class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
-                                    alt="<?php bloginfo('name'); ?>"/></a>
+                            <a<!-- href="--><?php /*//echo esc_url(home_url('/')); */ ?>" title="<?php bloginfo('name'); ?>">
+                            <img
+                                class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
+                                alt="<?php bloginfo('name'); ?>"/></a>
                         <?php else : ?>
-                            <h1 class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                                      rel="home"><?php bloginfo('name'); ?></a></h1>
-                            <h2 class="site-description"><?php bloginfo('description'); ?></h2>
+                            <h1 itemprop="headline" class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
+                                                                          rel="home"><?php bloginfo('name'); ?></a></h1>
+                            <h2 itemprop="description" class="site-description"><?php bloginfo('description'); ?></h2>
                         <?php endif; ?>
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-menu">
                         <div class="btn-menu"></div>
-                        <nav id="mainnav" class="mainnav" role="navigation" style="color: red;">
+                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" id="mainnav" class="mainnav"
+                             role="navigation" style="color: red;">
                             <?php wp_nav_menu(array('theme_location' => 'primary', 'fallback_cb' => 'sydney_menu_fallback')); ?>
                         </nav><!-- #site-navigation -->
                     </div>
+
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
-                        <p <!--style="overflow: hidden;-->">096 595 01 01<br><a href="#"><span
-                                class="popmake-522 header-number-text">Закажите&nbsp;обратный&nbsp;звонок</span></a>
+                        <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span
+                                class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
+                        <p class="address-top-menu" style="line-height: 50px;
+                         margin-left: 45%;
+                         font-size: 16px;
+                          min-height: 50px;
+                          margin-top: -5px;">М.ЛУЦЬК, ВУЛ. КРИВИЙ ВАЛ, 34, ОФ.201<br><a href="#"></a></p>
                     </div>
                 </div>
             </div>
@@ -81,9 +89,8 @@ session_start();
         <div class="container content-wrapper">
             <div class="row">
 
-
                 <?php
-                $sendto = 'awesomegame47@gmail.com'; //Адреса, куда будут приходить письма shakrov@ukr.net, seo@makintour.com
+                $sendto = 'malanchukdima@mail.ru'; //Адреса, куда будут приходить письма shakrov@ukr.net, seo@makintour.com
                 //$sendto = 'seo@makintour.com, info@coralborispol.com'; //Адреса, куда будут приходить письма
 
                 $phone = $_POST['tel-564'];
@@ -121,16 +128,16 @@ session_start();
                 // отправка сообщения
                 if (mail($sendto, $subject, $msg, $headers)) {
                     echo "<div class=\"thanks-text\">
-                    <p class=\"thanks-text-header\">Спасибо за заявку!<br>
-                        <span class=\"thanks-text-header-pre\">Наш менеджер скоро свяжется с Вами</span></p>
+                    <p class=\"thanks-text-header\">Дякуємо за заявку!<br>
+                        <span class=\"thanks-text-header-pre\">Наш менеджер зв'яжеться з вами наближчим часом</span></p>
                     <a href=\"javascript:history.back();\" class=\"back-to-main1\">Вернуться&ensp;назад</a>
                     <div class=\"social-thanks\">
-                        <p class=\"thanks-text-header-pre\">Мы в социальных сетях</p>
+                        <p class=\"thanks-text-header-pre\">Ми в соціальних мережах</p>
                         <div class=\"social-thanks-images\">
-                            <a href=\"https://www.facebook.com/borispol.coraltravel/\">
+                            <!--<a href=\"https://www.facebook.com/borispol.coraltravel/\">
                                 <img src=\"/wp-content/themes/sydney/img/social-thanks/facebook.png\">
-                            </a>
-                            <a href=\"https://vk.com/borispol.coraltravel\">
+                            </a>-->
+                            <a href=\"https://vk.com/makintour.lutsk\">
                                 <img src=\"/wp-content/themes/sydney/img/social-thanks/vk.png\">
                             </a>
                             <!--<a href=\"#\"><img src=\"/wp-content/themes/sydney/img/social-thanks/utube.png\"></a>
@@ -143,18 +150,18 @@ session_start();
                 else {
                     echo "<div class=\"thanks-text\">
                     <p style='font-size: 30px;' class=\"thanks-text-header\">
-                        К сожалениею при отправке формы произошла ошибка&nbsp;:(<br>
-                        <span style='display: inline-block; line-height: 25px; margin-top: 20px;' class=\"thanks-text-header-pre\">Вернитесь обратно и попробуйте еще раз<br>
-                        (также вы можете связаться с нами по электронной почте либо по номеру телефона, которые указаны на сайте)</span>
+                        Нажаль при відправці форми виникла помилка&nbsp;:(<br>
+                        <span style='display: inline-block; line-height: 25px; margin-top: 20px;' class=\"thanks-text-header-pre\">Поверніться назад та спробуйте ще раз<br>
+                        (також ви можете зв'язатися з нами по електронній пошті або номеру телефона, котрі вказані на сайті)</span>
                     </p>
-                    <a href=\"javascript:history.back();\" class=\"back-to-main1\">Вернуться&ensp;назад</a>
+                    <a href=\"javascript:history.back();\" class=\"back-to-main1\">Повернутися&ensp;назад</a>
                     <div class=\"social-thanks\">
-                        <p class=\"thanks-text-header-pre\">Мы в социальных сетях</p>
+                        <p class=\"thanks-text-header-pre\">Ми в соціальних мережах</p>
                         <div class=\"social-thanks-images\">
-                           <a href=\"https://www.facebook.com/borispol.coraltravel/\">
+                           <!--<a href=\"https://www.facebook.com/borispol.coraltravel/\">
                                 <img src=\"/wp-content/themes/sydney/img/social-thanks/facebook.png\">
-                            </a>
-                            <a href=\"https://vk.com/borispol.coraltravel\">
+                            </a>-->
+                            <a href=\"https://vk.com/makintour.lutsk\">
                                 <img src=\"/wp-content/themes/sydney/img/social-thanks/vk.png\">
                             </a>
                             <!--<a href=\"#\"><img src=\"/wp-content/themes/sydney/img/social-thanks/utube.png\"></a>
