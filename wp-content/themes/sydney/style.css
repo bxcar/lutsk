@@ -1638,8 +1638,8 @@ Blog
 }
 
 .content-area .hentry {
-    width: 23%;
-    /*max-width: 275px;*/
+    width: 22.5%;
+    max-width: 330px;
     display: inline-block;
     vertical-align: top;
     position: relative;
@@ -1654,8 +1654,12 @@ Blog
     /*height: 350px;	*/
     border: 1px solid #069eed;
     border-radius: 3px;
-    float: left;
+    /*float: left;*/
     transition: 0.2s;
+}
+
+#primary {
+    text-align: center;
 }
 
 .content-area .hentry:hover {
