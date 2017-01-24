@@ -8,7 +8,7 @@ session_start();
  * @package Sydney
  */
 /*$_SERVER['HTTP_REFERER']*/
-if(!$_SESSION['urli']) {
+if (!$_SESSION['urli']) {
     $_SESSION['urli'] = $_SERVER['REQUEST_URI'];
 }
 ?><!DOCTYPE html>
@@ -32,7 +32,8 @@ if(!$_SESSION['urli']) {
     <meta name="twitter:image" content="imagestild6131-6236-4936-b266-356133316465__en_logo_sqare2_wide_canvas.png">
 
 
-    <meta name="description" content="Горящие туры из Киева. Бронирование тура, авиаперелеты, экскурсионные туры из Троещины. Гарантия надежности!">
+    <meta name="description"
+          content="Горящие туры из Киева. Бронирование тура, авиаперелеты, экскурсионные туры из Троещины. Гарантия надежности!">
     <script src="/wp-content/themes/sydney/js/script_for_form_button.js"></script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -72,8 +73,21 @@ if(!$_SESSION['urli']) {
   ]
 }
 
+
     </script>
 
+<!--    <script src="/wp-content/themes/sydney/js/jquery-3.1.1.min.js"></script>-->
+<!--    <script src="/wp-content/themes/sydney/js/mask/src/jquery.maskedinput.js"></script>-->
+    <script>
+        $(document).ready(function () {
+
+//            $.mask.definitions['~'] = '[+-]';
+
+//            $('input[name=tel-564]').mask('+380999999999');
+            jQuery(".wpcf7-validates-as-tel").mask("+38-999-999-9999",{placeholder:"_"});
+        }
+    </script>
+<?php wp_head();?>
 </head>
 
 <body <?php body_class(); ?>>
@@ -106,24 +120,27 @@ if(!$_SESSION['urli']) {
                 <div class="row top-menu-margin">
                     <div class="col-md-4 col-sm-8 col-xs-12  header-logo">
                         <?php if (get_theme_mod('site_logo')) : ?>
-                            <a<!-- href="--><?php /*//echo esc_url(home_url('/')); */?>" title="<?php bloginfo('name'); ?>"><img
-                                    class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
-                                    alt="<?php bloginfo('name'); ?>"/></a>
+                            <a<!-- href="--><?php /*//echo esc_url(home_url('/')); */ ?>" title="<?php bloginfo('name'); ?>">
+                            <img
+                                class="site-logo" src="<?php echo esc_url(get_theme_mod('site_logo')); ?>"
+                                alt="<?php bloginfo('name'); ?>"/></a>
                         <?php else : ?>
                             <h1 itemprop="headline" class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>"
-                                                      rel="home"><?php bloginfo('name'); ?></a></h1>
+                                                                          rel="home"><?php bloginfo('name'); ?></a></h1>
                             <h2 itemprop="description" class="site-description"><?php bloginfo('description'); ?></h2>
                         <?php endif; ?>
                     </div>
                     <div class="col-md-8 col-sm-4 col-xs-12 header-menu">
                         <div class="btn-menu"></div>
-                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" id="mainnav" class="mainnav" role="navigation" style="color: red;">
+                        <nav itemscope itemtype="https://schema.org/SiteNavigationElement" id="mainnav" class="mainnav"
+                             role="navigation" style="color: red;">
                             <?php wp_nav_menu(array('theme_location' => 'primary', 'fallback_cb' => 'sydney_menu_fallback')); ?>
                         </nav><!-- #site-navigation -->
                     </div>
 
                     <div class="col-md-8 col-sm-4 col-xs-12 header-number">
-                        <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
+                        <p <!--style="overflow: hidden;-->">8 800 200 12 58<br><a href="#"><span
+                                class="popmake-522 header-number-text">ДЗВІНКИ&nbsp;БЕЗКОШТОВНІ</span></a></p>
                         <p class="address-top-menu" style="line-height: 50px;
                          margin-left: 45%;
                          font-size: 16px;
@@ -145,7 +162,7 @@ if(!$_SESSION['urli']) {
     <div id="content" class="page-wrap" style="padding-top: 30px; padding-bottom: 0;">
         <div class="container content-wrapper">
             <div class="row">
-                
+
                 <h2 id="goto-from-top-button" class="tour-header">Найкращі ціни на&nbsp;Тури по&nbsp;напрямкам</h2>
                 <div id="filt" class="filters">
                     <select id="country-select" class="select-spec" style="margin-right: 20px;
@@ -155,9 +172,9 @@ if(!$_SESSION['urli']) {
                         <option value="ОАЕ">ОАЕ</option>-->
                     </select>
                 </div>
-<!--                <div style="width: 500px; height: 500px;">-->
+                <!--                <div style="width: 500px; height: 500px;">-->
                 <div class="fon-class" id="fon">
                     <div class="load-class" id="load"></div>
                 </div>
 
-<!--                </div>-->
+                <!--                </div>-->

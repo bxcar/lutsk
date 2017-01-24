@@ -21,10 +21,10 @@
     <ul class="req-list">
         <li><img src="/wp-content/themes/sydney/img/tui-logo.png" alt="tui"/></li>
         <li><img src="/wp-content/themes/sydney/img/logotez.png" alt="tez-tour"/></li>
-        <li><img style="width: 80px !important;" src="/wp-content/themes/sydney/img/anex-logo.png" alt="anex tour"/></li>
+        <li><img style="width: 80px" src="/wp-content/themes/sydney/img/anex-logo.png" alt="anex tour"/></li>
         <li><img src="/wp-content/themes/sydney/img/joinup_logo.png" alt="join up"/></li>
-        <li><img style="width: 150px !important;" src="/wp-content/themes/sydney/img/pegas_logo.png" alt="pegas touristic"/></li>
-        <li><img style="width: 150px !important;" src="/wp-content/themes/sydney/img/coral_logo.png" alt="coral travel"/></li>
+        <li><img style="width: 150px" src="/wp-content/themes/sydney/img/pegas_logo.png" alt="pegas touristic"/></li>
+        <li><img style="width: 150px" src="/wp-content/themes/sydney/img/coral_logo.png" alt="coral travel"/></li>
     </ul>
     <div class="grid">
         <span class="prefooter prefooter2">Залишилось всього 7 сертифікатів</span>

@@ -5253,6 +5253,9 @@ input[type="color"]:focus {
         height: 70px;
     }
 
+    .req-list li img {
+        width: 70px !important;
+    }
     .content-area .entry-thumb .discount-amount {
         font-size: 18px;
         right: 3% !important;
@@ -5463,8 +5466,17 @@ input[type="color"]:focus {
     }
 
     .prices {
-        padding-top: 20px !important;
+        /*padding-top: 20px !important;*/
     }
+
+    #pum_popup_title_129,
+    #pum_popup_title_599,
+    #pum_popup_title_597,
+    #pum_popup_title_508,
+    #pum_popup_title_522 {
+        font-size: 18px !important;
+    }
+
 
     .prices h3 {
         font-size: 20px !important;
@@ -6598,7 +6610,7 @@ p {
 }
 
 .prices img {
-    width: auto !important;
+    width: auto;
     position: absolute;
     top: 0;
 }
@@ -7088,10 +7100,11 @@ a.back-to-main1 {
     display: inline-block;
     vertical-align: bottom;
     margin-right: 30px;
+    margin-top: 10px;
 }
 
 .req-list li img {
-    width: 100px !important;
+    width: 100px;
     position: static;
 }
 
