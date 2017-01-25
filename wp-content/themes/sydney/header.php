@@ -88,11 +88,29 @@ if (!$_SESSION['urli']) {
                 separator: '+380'
             });
 
-            /* MaskedInput({
-             elm: document.getElementById('phone2'), // select only by id
-             format: '+375 (__) ___-__-__',
-             separator: '+375 ()-'
-             });*/
+            MaskedInput({
+                elm: document.getElementById('phone-popup'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
+
+            MaskedInput({
+                elm: document.getElementById('phone-popup_2'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
+
+            MaskedInput({
+                elm: document.getElementById('phone-popup_3'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
+
+            MaskedInput({
+                elm: document.getElementById('phone-popup_4'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
         };
 
 

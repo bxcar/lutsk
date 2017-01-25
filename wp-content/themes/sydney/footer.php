@@ -122,7 +122,7 @@
 
                         <!--                <p class="team-year">1 год в туризме</p>-->
 
-                        <a href="#" class="popmake-597 modal-link product-link img-link"
+                        <a href="#" class="popmake-1117 modal-link product-link img-link"
                            data-order="Проверьте нас (Юлия)"
                            data-img="http://www.makintour.com/uploads/Chorna.jpg">Задайте мені питання</a>
                     </div>

@@ -3805,7 +3805,8 @@ input[type="color"]:focus {
     #popmake-599,
     #popmake-597,
     #popmake-508,
-    #popmake-522{
+    #popmake-522,
+    #popmake-1117{
         width: 451px !important;
     }
 
@@ -3918,7 +3919,8 @@ input[type="color"]:focus {
     #popmake-599,
     #popmake-597,
     #popmake-508,
-    #popmake-522 {
+    #popmake-522,
+    #popmake-1117 {
         width: 40% !important;
     }
 
@@ -4065,7 +4067,8 @@ input[type="color"]:focus {
 
     #popmake-129,
     #popmake-599,
-    #popmake-597 {
+    #popmake-597,
+    #popmake-1117 {
         width: 60% !important;
     }
 
@@ -4506,7 +4509,8 @@ input[type="color"]:focus {
     #popmake-166,
     #popmake-508,
     #popmake-522,
-    #popmake-1077{
+    #popmake-1077,
+    #popmake-1117{
         width: 80% !important;
         top: 10% !important;
     }
@@ -4515,7 +4519,8 @@ input[type="color"]:focus {
     #pum_popup_title_599,
     #pum_popup_title_597,
     #pum_popup_title_158,
-    #pum_popup_title_508 {
+    #pum_popup_title_508,
+    #pum_popup_title_1117 {
         margin-bottom: 10px;
         font-size: 18px;
         line-height: 25px;
@@ -4525,7 +4530,8 @@ input[type="color"]:focus {
     #popmake-599 input, #popmake-599 .pum-content > :last-child,
     #popmake-597 input, #popmake-597 .pum-content > :last-child,
     #popmake-522 input, #popmake-522 .pum-content > :last-child,
-    #popmake-508 input, #popmake-508 .pum-content > :last-child {
+    #popmake-508 input, #popmake-508 .pum-content > :last-child,
+    #popmake-1117 input, #popmake-1117 .pum-content > :last-child {
         margin-left: 0 !important;
         width: 100% !important;
     }
@@ -4534,7 +4540,8 @@ input[type="color"]:focus {
     #popmake-599 span,
     #popmake-597 span,
     #popmake-508 span,
-    #popmake-522 span {
+    #popmake-522 span,
+    #popmake-1117 span {
         margin-left: 0 !important;
     }
 
@@ -4542,7 +4549,8 @@ input[type="color"]:focus {
     #popmake-599 input[type="submit"],
     #popmake-597 input[type="submit"],
     #popmake-508 input[type="submit"],
-    #popmake-522 input[type="submit"] {
+    #popmake-522 input[type="submit"],
+    #popmake-1117 input[type="submit"] {
         padding: 10px !important;
     }
 
@@ -5250,7 +5258,7 @@ input[type="color"]:focus {
     }
 
     .content-area .hentry {
-        height: 330px;
+        height: 450px;
     }
 
 }
@@ -5301,13 +5309,15 @@ input[type="color"]:focus {
 
     #popmake-129 form,
     #popmake-599 form,
-    #popmake-597 form { /**/
+    #popmake-597 form,
+    #popmake-1117 form { /**/
         background: none !important;
     }
 
     #popmake-129 p,
     #popmake-599 p,
-    #popmake-597 p {
+    #popmake-597 p,
+    #popmake-1117 p {
         padding-left: 0 !important;
     }
 
@@ -5482,7 +5492,8 @@ input[type="color"]:focus {
     #pum_popup_title_599,
     #pum_popup_title_597,
     #pum_popup_title_508,
-    #pum_popup_title_522 {
+    #pum_popup_title_522,
+    #pum_popup_title_1117 {
         font-size: 18px !important;
     }
 
@@ -5512,7 +5523,7 @@ input[type="color"]:focus {
     }
 
     .content-area .hentry {
-        width: 47.5%
+        width: 47.5%;
         /*height: 320px;*/
         /*height: 100%;*/
         height: 290px;
@@ -6714,7 +6725,8 @@ p {
 #popmake-599,
 #popmake-597,
 #popmake-508,
-#popmake-522 {
+#popmake-522,
+#popmake-1117{
     width: 33%;
 }
 
@@ -6726,7 +6738,8 @@ p {
 #popmake-515,
 #popmake-166,
 #popmake-158,
-#popmake-1077{
+#popmake-1077,
+#popmake-1117{
     overflow: visible !important;
 }
 
@@ -6787,7 +6800,8 @@ p {
 #pum_popup_title_599,
 #pum_popup_title_597,
 #pum_popup_title_508,
-#pum_popup_title_522{
+#pum_popup_title_522,
+#pum_popup_title_1117{
     margin-bottom: 20px;
     font-weight: bold;
     font-size: 22px;
@@ -6811,8 +6825,10 @@ p {
 #pum_popup_title_597,
 #pum_popup_title_599,
 #pum_popup_title_597,
+#pum_popup_title_1117,
 #popmake-599,
-#popmake-597 {
+#popmake-597,
+#popmake-1117{
     line-height: 30px;
 }
 
@@ -6826,11 +6842,13 @@ p {
 #popmake-597 input,
 #popmake-508 input,
 #popmake-522 input,
+#popmake-1117 input,
 #popmake-129 .pum-content > :last-child,
 #popmake-599 .pum-content > :last-child,
 #popmake-597 .pum-content > :last-child,
 #popmake-508 .pum-content > :last-child,
-#popmake-522 .pum-content > :last-child {
+#popmake-522 .pum-content > :last-child,
+#popmake-1117 .pum-content > :last-child {
     width: 86%;
     margin-left: 7%;
     margin-right: auto;
@@ -6840,7 +6858,8 @@ p {
 #popmake-599 .pum-content > :last-child,
 #popmake-597 .pum-content > :last-child,
 #popmake-508 .pum-content > :last-child,
-#popmake-522 .pum-content > :last-child {
+#popmake-522 .pum-content > :last-child,
+#popmake-1117 .pum-content > :last-child {
     margin-top: 10px !important;
     font-size: 12px;
 }
@@ -6849,7 +6868,8 @@ p {
 #popmake-599 span,
 #popmake-597 span,
 #popmake-508 span,
-#popmake-522 span {
+#popmake-522 span,
+#popmake-1117 span {
     display: inline-block;
     vertical-align: top;
     margin-top: -16px;
@@ -6864,11 +6884,13 @@ p {
 #popmake-597 input[type="text"],
 #popmake-508 input[type="text"],
 #popmake-522 input[type="text"],
+#popmake-1117 input[type="text"],
 #popmake-129 input[type="tel"],
 #popmake-599 input[type="tel"],
 #popmake-597 input[type="tel"],
 #popmake-508 input[type="tel"],
-#popmake-522 input[type="tel"] {
+#popmake-522 input[type="tel"],
+#popmake-1117 input[type="tel"] {
     border: 1px solid #33a9d9;
     border-radius: 4px;
     font-family: "Open Sans", sans-serif;
