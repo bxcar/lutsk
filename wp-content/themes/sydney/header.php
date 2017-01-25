@@ -111,6 +111,18 @@ if (!$_SESSION['urli']) {
                 format: '+380_________',
                 separator: '+380'
             });
+
+            MaskedInput({
+                elm: document.getElementById('phone-popup-callback'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
+
+            MaskedInput({
+                elm: document.getElementById('phone-popup-special'), // select only by id
+                format: '+380_________',
+                separator: '+380'
+            });
         };
 
 
