@@ -6138,19 +6138,19 @@ input[type="color"]:focus {
 }
 
 .Dunai {
-    background: url("/wp-content/themes/sydney/img/anonim.png") no-repeat;
+    background: url("/wp-content/themes/sydney/img/dunai_n.png") no-repeat;
 }
 
 .Desyatnik {
-    background: url("/wp-content/themes/sydney/img/anonim.png") no-repeat;
+    background: url("/wp-content/themes/sydney/img/desyatnik_n.png") no-repeat;
 }
 
 .Chorna {
-    background: url("/wp-content/themes/sydney/img/anonim.png") no-repeat;
+    background: url("/wp-content/themes/sydney/img/chorna_n.png") no-repeat;
 }
 
 .Korolchuk {
-    background: url("/wp-content/themes/sydney/img/anonim.png") no-repeat;
+    background: url("/wp-content/themes/sydney/img/korolchuk_n.png") no-repeat;
 }
 
 .box {
@@ -6813,7 +6813,7 @@ p {
 }
 
 #pum_popup_title_508 {
-    /*margin-bottom: 30px;*/
+    margin-bottom: 30px;
 }
 
 

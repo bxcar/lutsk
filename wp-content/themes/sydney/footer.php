@@ -108,7 +108,7 @@
                 </div>
 
                 <div class="team-item box">
-                    <div class="team-img Chorna"></div>
+                    <div class="team-img Korolchuk"></div>
                     <div class="team-info">
                         <h3>Корольчук Наталія</h3>
 
