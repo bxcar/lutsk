@@ -14,26 +14,28 @@ if (!$_SESSION['urli']) {
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head itemscope itemtype="http://schema.org/WebSite">
-    <title itemprop='name'>Горящие туры на Троещине: Coral Travel</title>
+    <title itemprop='name'>Горящие туры в Луцке: Makintour</title>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="Горящие туры на Троещине - Coral Travel"/>
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <meta property="og:title" content="Горящие туры в Луцке - Makintour"/>
     <meta property="og:description" content="Самые выгодные цены от надежной компании"/>
-    <meta property="og:url" content="http://coraltravel.kiev.ua"/>
+    <meta property="og:url" content="http://lutsk.makintour.com"/>
     <meta property="og:image"
           content="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/slider2_oprimize.jpg"/>
 
 
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="@">
-    <meta name="twitter:title" content="Работа для менеджера по туризму">
+    <meta name="twitter:title" content="Горящие туры в Луцке: Makintour">
     <meta name="twitter:description"
-          content="Любите туризм и хотите работать в этой сфере Присоединяйтесь к команде профессионалов!">
-    <meta name="twitter:image" content="imagestild6131-6236-4936-b266-356133316465__en_logo_sqare2_wide_canvas.png">
+          content="Самые выгодные цены от надежной компании!">
+    <meta name="twitter:image" content="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/slider2_oprimize.jpg">
 
 
     <meta name="description"
-          content="Горящие туры из Киева. Бронирование тура, авиаперелеты, экскурсионные туры из Троещины. Гарантия надежности!">
+          content="Горящие туры из Луцка.
+          Бронирование тура, авиаперелеты, экскурсионные туры. Гарантия надежности!">
     <script src="/wp-content/themes/sydney/js/script_for_form_button.js"></script>
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -42,11 +44,11 @@ if (!$_SESSION['urli']) {
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic"
         rel="stylesheet">
-    <?php if (!function_exists('has_site_icon') || !has_site_icon()) : ?>
-        <?php if (get_theme_mod('site_favicon')) : ?>
-            <link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>"/>
-        <?php endif; ?>
-    <?php endif; ?>
+    <?php /*if (!function_exists('has_site_icon') || !has_site_icon()) : */?><!--
+        <?php /*if (get_theme_mod('site_favicon')) : */?>
+            <link rel="shortcut icon" href="<?php /*echo esc_url(get_theme_mod('site_favicon')); */?>"/>
+        <?php /*endif; */?>
+    --><?php /*endif; */?>
 
     <?php wp_head(); ?>
 
@@ -71,8 +73,6 @@ if (!$_SESSION['urli']) {
     "https://vk.com/makintour.lutsk"
   ]
 }
-
-
 
 
     </script>
@@ -410,12 +410,12 @@ if (!$_SESSION['urli']) {
 
 <div itemscope itemtype="http://schema.org/PostalAddress" style="display: none;">
 
-    <span itemprop="name">Горящие туры на Троещине: Coral Travel</span>
-    <span itemprop="postalCode">01001,</span> <span
-        itemprop="addressLocality">Украина, Киевская обл., г.Киев</span>
-    <span itemprop="streetAddress">просп. Маяковского 44-А</span>
-    Телефон: <span itemprop="telephone">+38 096 711 01 01</span>
-    E-mail: <span itemprop="email">kiev2@makintour.com</span>
+    <span itemprop="name">Горящие туры в Луцке: Makintour</span>
+    <span itemprop="postalCode">43026,</span> <span
+        itemprop="addressLocality">Украина, Волынская обл., г.Луцк</span>
+    <span itemprop="streetAddress">ул. Кривой вал 34</span>
+    Телефон: <span itemprop="telephone">+38(068) 528 2227</span>
+    E-mail: <span itemprop="email">lutsk@makintour.com</span>
 
 </div>
 

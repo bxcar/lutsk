@@ -5326,7 +5326,7 @@ input[type="color"]:focus {
     }
 
     .team .team-item .team-info p.team-tel {
-        background: url("/wp-content/themes/sydney/img/skype-icon-for-manager.png") no-repeat left center !important;
+        /*background: url("/wp-content/themes/sydney/img/skype-icon-for-manager.png") no-repeat left center !important;*/
         margin-left: 0 !important;
         padding-left: 20px !important;
     }

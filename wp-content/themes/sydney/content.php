@@ -340,7 +340,7 @@ AND pmet.meta_value = p.id";
                 <article itemscope itemtype="http://schema.org/BlogPosting"
                          class="post type-post status-publish format-standard has-post-thumbnail hentry">
                     <meta itemscope itemprop="mainEntityOfPage" itemType="https://schema.org/WebPage"
-                          itemid="http://coraltravel.kiev.ua"/> <!--Адрес главной страницы-->
+                          itemid="http://lutsk.makintour.com"/> <!--Адрес главной страницы-->
                     <meta itemprop="dateModified" content="<?php the_modified_time('Y-m-d') ?>"/>
                     <!--Дата последнего изменения-->
 
@@ -348,16 +348,16 @@ AND pmet.meta_value = p.id";
                     <div itemprop="publisher" itemscope itemtype="https://schema.org/Organization"
                          style="display:none;">
                         <div itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
-                            <span itemprop="streetAddress">просп. Маяковского 44-А</span>
-                            <span itemprop="postalCode">01001</span>
-                            <span itemprop="addressLocality">Украина, Киевская обл., г.Киев</span>
-                            <span itemprop="telephone">+38 096 711 01 01</span>
+                            <span itemprop="streetAddress">ул. Кривой вал 34</span>
+                            <span itemprop="postalCode">43026</span>
+                            <span itemprop="addressLocality">Украина, Волынская обл., г.Луцк</span>
+                            <span itemprop="telephone">+38(068) 528 2227</span>
                         </div>
                         <div itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
                             <img itemprop="url"
-                                 src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
+                                 src="http://www.makintour.com/img/logo.png"/>
                             <img itemprop="image"
-                                 src="http://coraltravel.kiev.ua/wp-content/themes/sydney/img/logo_coral.png"/>
+                                 src="http://www.makintour.com/img/logo.png"/>
                             <meta itemprop="width" content="100">
                             <meta itemprop="height" content="43">
                         </div>

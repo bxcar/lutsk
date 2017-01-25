@@ -10,8 +10,9 @@ session_start();
 ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 <head>
-    <title>Coral Travel - Троещина</title>
+    <title>Makintour - Луцк</title>
     <meta name="description" content="Страница благодарности посетителям сайта за проявленное желание сотрудничать">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
     <meta charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="profile" href="http://gmpg.org/xfn/11">
@@ -19,11 +20,11 @@ session_start();
     <link
         href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic"
         rel="stylesheet">
-    <?php if (!function_exists('has_site_icon') || !has_site_icon()) : ?>
-        <?php if (get_theme_mod('site_favicon')) : ?>
-            <link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>"/>
-        <?php endif; ?>
-    <?php endif; ?>
+    <?php /*if (!function_exists('has_site_icon') || !has_site_icon()) : */?><!--
+        <?php /*if (get_theme_mod('site_favicon')) : */?>
+            <link rel="shortcut icon" href="<?php /*echo esc_url(get_theme_mod('site_favicon')); */?>"/>
+        <?php /*endif; */?>
+    --><?php /*endif; */?>
 
     <?php wp_head(); ?>
 
@@ -115,7 +116,7 @@ session_start();
 
                 // Формирование тела письма
                 $msg = "<html><body style='font-family:Arial,sans-serif;'>";
-                $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новая заявка - Coral Travel Троещина</h2>\r\n";
+                $msg .= "<h2 style='font-weight:bold;border-bottom:1px dotted #ccc;'>Новая заявка - Makintour Луцк</h2>\r\n";
                 $msg .= "<p><strong>Имя:</strong> " . $name . "</p>\r\n";
                 $msg .= "<p><strong>Телефон:</strong> " . $phone . "</p>\r\n";
                 if ($_POST['your-message']) {
